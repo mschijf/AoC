@@ -26,6 +26,10 @@ class PuzzleSolver(test: Boolean) : PuzzleSolverAbstract(test) {
     }
 
 
+    //
+    // todo: floorMod for Long values gives a review error. hence the warning in the editor
+    //       haven't (won't) fix that until it i s areal problem
+    //
     private fun mixList(list: MutableList<Pair<Long, Int>>) {
         val cycleLength = list.size
         for (index in list.indices) {
