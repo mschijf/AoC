@@ -1,0 +1,636 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a08f25da-438a-445a-b347-1839692f48ce" name="Changes" comment="changed to maven/pom instead of gradle" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin Class" />
+        <option value="Kotlin Data Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GradleScriptDefinitionsStorage" workingDir="$PROJECT_DIR$" gradleHome="$USER_HOME$/.gradle/wrapper/dists/gradle-8.14-bin/38aieal9i53h9rfe7vjup95b9/gradle-8.14" javaHome="/opt/homebrew/Cellar/openjdk@21/21.0.6/libexec/openjdk.jdk/Contents/Home" gradleVersion="8.14" />
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="36HLcqJLJlpE1ZhACQHy45Sg9pk" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.AdventOfCode2025 [:adventofcode.AllKt.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.AdventOfCode2025 [:adventofcode.Day00Kt.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.AdventOfCode2025 [:adventofcode.Day02Kt.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.AdventOfCode2025 [:adventofcode.Day03Kt.main()].executor&quot;: &quot;Debug&quot;,
+    &quot;Gradle.AdventOfCode2025 [:adventofcode.Day04Kt.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.AdventOfCode2025 [:adventofcode.Day05Kt.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.AdventOfCode2025 [:adventofcode.Day06Kt.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.AdventOfCode2025 [:adventofcode.Day07Kt.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.AdventOfCode2025 [:adventofcode.Day08Kt.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.AdventOfCode2025 [:adventofcode.Day09Kt.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.AdventOfCode2025 [:adventofcode.Day10Kt.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.AdventOfCode2025 [:adventofcode.Day11Kt.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.AdventOfCode2025 [:adventofcode.Day12Kt.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Kotlin.All24Kt.executor&quot;: &quot;Run&quot;,
+    &quot;Kotlin.All25Kt.executor&quot;: &quot;Run&quot;,
+    &quot;Kotlin.AllKt (1).executor&quot;: &quot;Run&quot;,
+    &quot;Kotlin.AllKt.executor&quot;: &quot;Run&quot;,
+    &quot;Kotlin.Day01Kt.executor&quot;: &quot;Run&quot;,
+    &quot;Kotlin.Day10Kt (1).executor&quot;: &quot;Run&quot;,
+    &quot;Kotlin.Day10Kt.executor&quot;: &quot;Run&quot;,
+    &quot;Kotlin.Day2401Kt.executor&quot;: &quot;Run&quot;,
+    &quot;Kotlin.Day2501Kt.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/martinschijf/Prive/AoC&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;/Users/martinschijf/Prive/AdventOfCode2025b/src/main/kotlin/Main.kt&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.3816092&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/kotlin/adventofcode" />
+      <recent name="$PROJECT_DIR$/src/main/kotlin/adventofcode/year2024" />
+      <recent name="$PROJECT_DIR$/data/2024" />
+      <recent name="$PROJECT_DIR$/data" />
+      <recent name="$PROJECT_DIR$/data/december11" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/data/2025" />
+    </key>
+    <key name="K2MoveDeclarationsDialog.RECENT_PACKAGE_KEY">
+      <recent name="adventofcode.year2024" />
+      <recent name="adventofcode" />
+      <recent name="adventofcode.2025" />
+      <recent name="tool.mylambdas.collectioncombination" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Kotlin.All25Kt">
+    <configuration name="All24Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="adventofcode.year2024.All24Kt" />
+      <module name="AoC" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="All25Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="adventofcode.year2025.All25Kt" />
+      <module name="AoC" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AllKt (1)" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="adventofcode.AllKt" />
+      <module name="AoC" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Day2401Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="adventofcode.year2024.Day2401Kt" />
+      <module name="AoC" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Day2501Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="adventofcode.year2025.Day2501Kt" />
+      <module name="AoC" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="AoC" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="AoC" />
+      <option name="filePath" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="AoC" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="Python.FlaskServer">
+      <module name="AoC" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <module name="AoC" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Kotlin.All25Kt" />
+        <item itemvalue="Kotlin.All24Kt" />
+        <item itemvalue="Kotlin.Day2401Kt" />
+        <item itemvalue="Kotlin.Day2501Kt" />
+        <item itemvalue="Kotlin.AllKt (1)" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-bf35d07a577b-intellij.indexing.shared.core-IU-252.28238.7" />
+        <option value="bundled-js-predefined-d6986cc7102b-a71380e98a7c-JavaScript-IU-252.28238.7" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a08f25da-438a-445a-b347-1839692f48ce" name="Changes" comment="" />
+      <created>1764658632420</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1764658632420</updated>
+      <workItem from="1764658633405" duration="17000" />
+      <workItem from="1764660005878" duration="3218000" />
+      <workItem from="1764753231152" duration="6645000" />
+      <workItem from="1764913453068" duration="156251000" />
+      <workItem from="1765693623340" duration="995000" />
+      <workItem from="1765694781643" duration="4704000" />
+      <workItem from="1765706315899" duration="25000" />
+    </task>
+    <task id="LOCAL-00001" summary="refording gralde shit&#10;day 2">
+      <option name="closed" value="true" />
+      <created>1764660066511</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1764660066511</updated>
+    </task>
+    <task id="LOCAL-00002" summary="day 3">
+      <option name="closed" value="true" />
+      <created>1764746433432</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1764746433432</updated>
+    </task>
+    <task id="LOCAL-00003" summary="day 3">
+      <option name="closed" value="true" />
+      <created>1764746846824</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1764746846824</updated>
+    </task>
+    <task id="LOCAL-00004" summary="day 4">
+      <option name="closed" value="true" />
+      <created>1764830147524</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1764830147524</updated>
+    </task>
+    <task id="LOCAL-00005" summary="day 4 - refactored">
+      <option name="closed" value="true" />
+      <created>1764831598580</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1764831598580</updated>
+    </task>
+    <task id="LOCAL-00006" summary="day 5">
+      <option name="closed" value="true" />
+      <created>1764915873859</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1764915873859</updated>
+    </task>
+    <task id="LOCAL-00007" summary="day 5 - refactored">
+      <option name="closed" value="true" />
+      <created>1764918866327</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1764918866327</updated>
+    </task>
+    <task id="LOCAL-00008" summary="day 6">
+      <option name="closed" value="true" />
+      <created>1765004680074</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1765004680074</updated>
+    </task>
+    <task id="LOCAL-00009" summary="day 6 - refactored and commented a bit">
+      <option name="closed" value="true" />
+      <created>1765005597083</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1765005597083</updated>
+    </task>
+    <task id="LOCAL-00010" summary="day 6 - refactored more">
+      <option name="closed" value="true" />
+      <created>1765007002653</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1765007002653</updated>
+    </task>
+    <task id="LOCAL-00011" summary="day 6 - refactored more">
+      <option name="closed" value="true" />
+      <created>1765014113003</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1765014113003</updated>
+    </task>
+    <task id="LOCAL-00012" summary="day 6 - refactored by using a matrix class">
+      <option name="closed" value="true" />
+      <created>1765027610043</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1765027610043</updated>
+    </task>
+    <task id="LOCAL-00013" summary="day 6 - refactored by using a matrix class">
+      <option name="closed" value="true" />
+      <created>1765028378514</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1765028378514</updated>
+    </task>
+    <task id="LOCAL-00014" summary="day 6 - refactored by using a matrix class of Char in stead of string">
+      <option name="closed" value="true" />
+      <created>1765030667675</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1765030667675</updated>
+    </task>
+    <task id="LOCAL-00015" summary="day 6 - refactored by using a generic matrix class">
+      <option name="closed" value="true" />
+      <created>1765032271449</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1765032271449</updated>
+    </task>
+    <task id="LOCAL-00016" summary="day 6 - more refactoring.">
+      <option name="closed" value="true" />
+      <created>1765032838663</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1765032838663</updated>
+    </task>
+    <task id="LOCAL-00017" summary="day 7">
+      <option name="closed" value="true" />
+      <created>1765087768877</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1765087768877</updated>
+    </task>
+    <task id="LOCAL-00018" summary="day 7 - refactored">
+      <option name="closed" value="true" />
+      <created>1765088765207</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1765088765207</updated>
+    </task>
+    <task id="LOCAL-00019" summary="day 5 - created generic LongRangeSet data class">
+      <option name="closed" value="true" />
+      <created>1765107098985</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1765107098985</updated>
+    </task>
+    <task id="LOCAL-00020" summary="day 5 - created generic LongRangeSet data class">
+      <option name="closed" value="true" />
+      <created>1765107110422</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1765107110422</updated>
+    </task>
+    <task id="LOCAL-00021" summary="day 5 - created generic LongRangeSet data class">
+      <option name="closed" value="true" />
+      <created>1765107121121</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1765107121121</updated>
+    </task>
+    <task id="LOCAL-00022" summary="all/abstract - better timing printing">
+      <option name="closed" value="true" />
+      <created>1765107150942</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1765107150942</updated>
+    </task>
+    <task id="LOCAL-00023" summary="all/abstract - better timing printing &#10;--&gt; via nanoseconds&#10;--&gt; printed in milliseconds">
+      <option name="closed" value="true" />
+      <created>1765109798001</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1765109798001</updated>
+    </task>
+    <task id="LOCAL-00024" summary="all/abstract - better timing printing &#10;--&gt; via nanoseconds&#10;--&gt; printed in milliseconds">
+      <option name="closed" value="true" />
+      <created>1765112630014</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1765112630014</updated>
+    </task>
+    <task id="LOCAL-00025" summary="day 8 --&gt; part1, now correct">
+      <option name="closed" value="true" />
+      <created>1765193130396</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1765193130396</updated>
+    </task>
+    <task id="LOCAL-00026" summary="day 8 --&gt; part 2 done and refactoring&#10;(and learned that you never should have a set of MutableSets)">
+      <option name="closed" value="true" />
+      <created>1765215994435</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1765215994435</updated>
+    </task>
+    <task id="LOCAL-00027" summary="day 8 --&gt; part 2 done and refactoring&#10;(and learned that you never should have a set of MutableSets)">
+      <option name="closed" value="true" />
+      <created>1765216732710</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1765216732710</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Adding eucledian Distance to Point (after adding it to Point3D)">
+      <option name="closed" value="true" />
+      <created>1765216880583</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1765216880583</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Day 8 - final refactoring with help from CoPilot.">
+      <option name="closed" value="true" />
+      <created>1765219104041</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1765219104041</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Day 9 - temp commit">
+      <option name="closed" value="true" />
+      <created>1765303152840</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1765303152840</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Day 9 - done, but needs refactoring">
+      <option name="closed" value="true" />
+      <created>1765316007501</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1765316007501</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Day 9 - done, but needs refactoring">
+      <option name="closed" value="true" />
+      <created>1765316199245</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1765316199245</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Day 10 - part 1 - and some part 2 tries">
+      <option name="closed" value="true" />
+      <created>1765434679019</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1765434679019</updated>
+    </task>
+    <task id="LOCAL-00034" summary="Day 11">
+      <option name="closed" value="true" />
+      <created>1765480876314</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1765480876314</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Day 11 - refactored">
+      <option name="closed" value="true" />
+      <created>1765481634977</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1765481634977</updated>
+    </task>
+    <task id="LOCAL-00036" summary="Day 10 - temp">
+      <option name="closed" value="true" />
+      <created>1765517483045</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1765517483045</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Day 12 - Fixed!">
+      <option name="closed" value="true" />
+      <created>1765635313464</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1765635313464</updated>
+    </task>
+    <task id="LOCAL-00038" summary="Day 10 - Fixed, refactored, commented it!">
+      <option name="closed" value="true" />
+      <created>1765650054759</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1765650054759</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Adding powerSet to math functions">
+      <option name="closed" value="true" />
+      <created>1765650299412</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1765650299412</updated>
+    </task>
+    <task id="LOCAL-00040" summary="refactoring generic functions">
+      <option name="closed" value="true" />
+      <created>1765692859908</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1765692859908</updated>
+    </task>
+    <task id="LOCAL-00041" summary="changed to maven/pom instead of gradle">
+      <option name="closed" value="true" />
+      <created>1765695227547</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1765695227547</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="day 6 - refactored by using a matrix class" />
+    <MESSAGE value="day 6 - refactored by using a matrix class of Char in stead of string" />
+    <MESSAGE value="day 6 - refactored by using a generic matrix class" />
+    <MESSAGE value="day 6 - more refactoring." />
+    <MESSAGE value="day 7" />
+    <MESSAGE value="day 7 - refactored" />
+    <MESSAGE value="day 5 - created generic LongRangeSet data class" />
+    <MESSAGE value="all/abstract - better timing printing" />
+    <MESSAGE value="all/abstract - better timing printing &#10;--&gt; via nanoseconds&#10;--&gt; printed in milliseconds" />
+    <MESSAGE value="day 8 --&gt; but wrong" />
+    <MESSAGE value="day 8 --&gt; part1, now correct" />
+    <MESSAGE value="day 8 --&gt; part 2 done and refactoring&#10;(and learned that you never should have a set of MutableSets)" />
+    <MESSAGE value="Adding eucledian Distance to Point (after adding it to Point3D)" />
+    <MESSAGE value="Day 8 - final refactoring with help from CoPilot." />
+    <MESSAGE value="Day 9 - temp commit" />
+    <MESSAGE value="Day 9 - done, but needs refactoring" />
+    <MESSAGE value="Day 10 - part 1 - and some part 2 tries" />
+    <MESSAGE value="Day 11" />
+    <MESSAGE value="Day 11 - refactored" />
+    <MESSAGE value="Day 10 - temp" />
+    <MESSAGE value="Day 12 - Fixed!" />
+    <MESSAGE value="Day 10 - Fixed, refactored, commented it!" />
+    <MESSAGE value="Adding powerSet to math functions" />
+    <MESSAGE value="refactoring generic functions" />
+    <MESSAGE value="changed to maven/pom instead of gradle" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed to maven/pom instead of gradle" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/main/kotlin/Main.kt</url>
+          <line>13</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/main/kotlin/adventofcode/PuzzleSolverAbstract.kt</url>
+          <line>81</line>
+          <option name="timeStamp" value="57" />
+        </line-breakpoint>
+        <breakpoint type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="55" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="GradleRunConfiguration">
+        <watch expression="((java.util.ArrayList)this.polygonLineList).get(7)" custom="adventofcode.Polygon,java.util.ArrayList" />
+        <watch expression="((LinkedHashSet)buttonCombiSet).toArray()[3]" custom="java.util.LinkedHashSet" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
