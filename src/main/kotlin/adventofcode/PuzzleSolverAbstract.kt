@@ -27,23 +27,6 @@ abstract class PuzzleSolverAbstract (
         println("==================================================================")
     }
 
-//    fun showResultShort() {
-//        println("Day $dayOfMonth (${if (test) "test" else "real"} input) $puzzleName")
-//        print("   ")
-//        printResult(1) { resultPartOne().toString() }
-//        print("   ")
-//        printResult(2) { resultPartTwo().toString() }
-//        println("==================================================================")
-//    }
-//
-//    fun showResultTimeOnly() {
-//        val result = executeOnly()
-//        print(" ${result.dayOfMonth.toString().padStart(2, ' ')} ${result.name.padEnd(30, ' ')}: ")
-//
-//        print("%4d.%03d ms   ".format(result.timePassedPart1Ns / 1_000_000, result.timePassedPart1Ns % 1_000))
-//        print("%4d.%03d ms   ".format(result.timePassedPart2Ns / 1_000_000, result.timePassedPart2Ns % 1_000))
-//    }
-//
     fun executeOnly(): PuzzleResultData{
         val timePassed1 = getResultTimeOnly() { resultPartOne() }
         val timePassed2 = getResultTimeOnly() { resultPartTwo() }
@@ -70,8 +53,8 @@ abstract class PuzzleSolverAbstract (
         val className = this.javaClass.name.lowercase()
         val dayOfMonth = if (className.contains("day")) {
             className.substringAfter("day").takeLast(2)
-        } else if (className.contains("december")) {
-            className.substringAfter("december").takeLast(2)
+        } else if (className.contains("december") && className.contains("puzzlesolver")) {
+            className.substringAfter("december").take(2)
         } else {
             className.takeLast(2)
         }

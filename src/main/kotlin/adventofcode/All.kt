@@ -22,11 +22,11 @@ fun runYear (year: Int, test: Boolean, verbose: Boolean) {
 }
 
 fun runDay(year: Int, dayNr: Int, test: Boolean, verbose: Boolean, warmingUp: Boolean = false) {
-    val className = "Day%02d%02d".format(year - 2000, dayNr)
-    val packageName = "adventofcode.year$year"
+
+    val fullClassName = determineFullClassName(year, dayNr)
     try {
         val startTime = System.nanoTime()
-        val kClass = Class.forName("$packageName.$className").kotlin
+        val kClass = Class.forName(fullClassName).kotlin
         val methodName = if (verbose) "showResultShort" else "executeOnly"
         val method = kClass.members.find { it.name == methodName }
         val obj = kClass.constructors.first().call(test)
@@ -48,9 +48,26 @@ fun runDay(year: Int, dayNr: Int, test: Boolean, verbose: Boolean, warmingUp: Bo
 
     } catch (_: ClassNotFoundException) {
         if (verbose) {
-            println("$className not implemented (yet)")
+            println("$fullClassName not implemented (yet)")
         }
     } catch (otherE: Exception) {
-        println("$className runs with exception ${otherE.cause}")
+        println("$fullClassName runs with exception ${otherE.cause}")
+    }
+}
+
+private fun determineFullClassName(year: Int, dayNr: Int): String {
+
+    return try {
+        val className = "Day%02d%02d".format(year - 2000, dayNr)
+        val packageName = "adventofcode.year$year"
+
+        val kClass = Class.forName("$packageName.$className").kotlin
+        "$packageName.$className"
+    } catch (_: ClassNotFoundException) {
+        val className = "PuzzleSolver"
+        val packageName = "adventofcode.year$year.december%02d".format(dayNr)
+
+        val kClass = Class.forName("$packageName.$className").kotlin
+        "$packageName.$className"
     }
 }

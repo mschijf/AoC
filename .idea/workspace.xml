@@ -4,9 +4,95 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a08f25da-438a-445a-b347-1839692f48ce" name="Changes" comment="adding 2024&#10;adding 2025">
+    <list default="true" id="a08f25da-438a-445a-b347-1839692f48ce" name="Changes" comment="adding 2022">
+      <change afterPath="$PROJECT_DIR$/data/2022/december00/example" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2022/december00/input" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2022/december01/example" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2022/december01/input" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2022/december02/example" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2022/december02/input" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2022/december03/example" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2022/december03/input" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2022/december04/example" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2022/december04/input" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2022/december05/example" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2022/december05/input" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2022/december06/example" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2022/december06/input" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2022/december07/example" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2022/december07/input" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2022/december08/example" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2022/december08/input" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2022/december09/example" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2022/december09/example2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2022/december09/input" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2022/december10/example" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2022/december10/input" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2022/december11/example" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2022/december11/input" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2022/december12/example" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2022/december12/input" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2022/december13/example" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2022/december13/input" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2022/december14/example" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2022/december14/input" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2022/december15/example" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2022/december15/input" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2022/december16/example" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2022/december16/input" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2022/december17/example" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2022/december17/input" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2022/december18/example" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2022/december18/input" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2022/december19/example" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2022/december19/input" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2022/december20/example" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2022/december20/input" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2022/december21/example" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2022/december21/input" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2022/december22/example" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2022/december22/input" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2022/december23/example" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2022/december23/input" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2022/december24/example" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2022/december24/input" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2022/december25/example" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/2022/december25/input" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/adventofcode/year2022/december01/PuzzleSolver.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/adventofcode/year2022/december02/PuzzleSolver.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/adventofcode/year2022/december03/PuzzleSolver.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/adventofcode/year2022/december04/PuzzleSolver.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/adventofcode/year2022/december05/PuzzleSolver.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/adventofcode/year2022/december06/PuzzleSolver.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/adventofcode/year2022/december06/PuzzleSolverPerformingAlternative.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/adventofcode/year2022/december07/PuzzleSolver.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/adventofcode/year2022/december08/PuzzleSolver.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/adventofcode/year2022/december09/PuzzleSolver.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/adventofcode/year2022/december10/PuzzleSolver.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/adventofcode/year2022/december10/PuzzleSolverAlternative.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/adventofcode/year2022/december11/PuzzleSolver.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/adventofcode/year2022/december12/PuzzleSolver.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/adventofcode/year2022/december13/PuzzleSolver.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/adventofcode/year2022/december14/PuzzleSolver.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/adventofcode/year2022/december15/PuzzleSolver.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/adventofcode/year2022/december16/PuzzleSolver.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/adventofcode/year2022/december17/PuzzleSolver.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/adventofcode/year2022/december17/analyse AofC .xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/adventofcode/year2022/december18/PuzzleSolver.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/adventofcode/year2022/december19/PuzzleSolver.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/adventofcode/year2022/december20/PuzzleSolver.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/adventofcode/year2022/december21/PuzzleSolver.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/adventofcode/year2022/december22/PuzzleSolver.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/adventofcode/year2022/december23/PuzzleSolver.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/adventofcode/year2022/december24/PuzzleSolver.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/adventofcode/year2022/december24/version2/AStar.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/adventofcode/year2022/december24/version2/PuzzleSolver.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/adventofcode/year2022/december24/version2/SearchRecursive.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/adventofcode/year2022/december25/PuzzleSolver.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/adventofcode/All.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/adventofcode/All.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/adventofcode/PuzzleSolverAbstract.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/adventofcode/PuzzleSolverAbstract.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,13 +154,19 @@
     "Kotlin.Day2318Kt.executor": "Run",
     "Kotlin.Day2401Kt.executor": "Run",
     "Kotlin.Day2501Kt.executor": "Run",
+    "Kotlin.PuzzleSolverKt (1).executor": "Run",
+    "Kotlin.PuzzleSolverKt (2).executor": "Run",
+    "Kotlin.PuzzleSolverKt (3).executor": "Run",
+    "Kotlin.PuzzleSolverKt (4).executor": "Run",
+    "Kotlin.PuzzleSolverKt (5).executor": "Run",
+    "Kotlin.PuzzleSolverKt.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/martinschijf/Prive/AoC/data/2023",
+    "last_opened_file_path": "/Users/martinschijf/Prive/AoC/src/main/kotlin/adventofcode/year2022",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -90,38 +182,24 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/data/2023" />
-      <recent name="$PROJECT_DIR$/src/main/kotlin/adventofcode/year2023" />
+      <recent name="$PROJECT_DIR$/src/main/kotlin/adventofcode/year2022" />
+      <recent name="$PROJECT_DIR$/src/main/kotlin/adventofcode/year2022/" />
       <recent name="$PROJECT_DIR$/src/main/kotlin/adventofcode" />
-      <recent name="$PROJECT_DIR$/src/main/kotlin/adventofcode/year2024" />
-      <recent name="$PROJECT_DIR$/data/2024" />
+      <recent name="$PROJECT_DIR$/data/2022" />
+      <recent name="$PROJECT_DIR$/data/2023" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/data/2025" />
     </key>
     <key name="K2MoveDeclarationsDialog.RECENT_PACKAGE_KEY">
-      <recent name="adventofcode.year2023" />
+      <recent name="adventofcode.december01" />
       <recent name="adventofcode" />
+      <recent name="adventofcode.year2023" />
       <recent name="adventofcode2023" />
       <recent name="adventofcode.year2024" />
-      <recent name="adventofcode.2025" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.AllKt">
-    <configuration name="All23Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="adventofcode.year2023.All23Kt" />
-      <module name="AoC" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="All25Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="adventofcode.year2025.All25Kt" />
-      <module name="AoC" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Kotlin.PuzzleSolverKt (2)">
     <configuration name="AllKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="adventofcode.AllKt" />
       <module name="AoC" />
@@ -129,15 +207,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Day2301Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="adventofcode.year2023.Day2301Kt" />
+    <configuration name="PuzzleSolverKt (1)" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="adventofcode.year2022.december16.PuzzleSolverKt" />
       <module name="AoC" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Day2318Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="adventofcode.year2023.Day2318Kt" />
+    <configuration name="PuzzleSolverKt (2)" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="adventofcode.year2022.december20.PuzzleSolverKt" />
+      <module name="AoC" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PuzzleSolverKt (5)" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="adventofcode.year2022.december06.PuzzleSolverKt" />
+      <module name="AoC" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PuzzleSolverKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="adventofcode.year2022.december11.PuzzleSolverKt" />
       <module name="AoC" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -206,11 +298,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.PuzzleSolverKt (2)" />
         <item itemvalue="Kotlin.AllKt" />
-        <item itemvalue="Kotlin.All23Kt" />
-        <item itemvalue="Kotlin.Day2318Kt" />
-        <item itemvalue="Kotlin.Day2301Kt" />
-        <item itemvalue="Kotlin.All25Kt" />
+        <item itemvalue="Kotlin.PuzzleSolverKt (1)" />
+        <item itemvalue="Kotlin.PuzzleSolverKt" />
+        <item itemvalue="Kotlin.PuzzleSolverKt (5)" />
       </list>
     </recent_temporary>
   </component>
@@ -236,7 +328,7 @@
       <workItem from="1765693623340" duration="995000" />
       <workItem from="1765694781643" duration="4704000" />
       <workItem from="1765706315899" duration="25000" />
-      <workItem from="1765706392242" duration="1601000" />
+      <workItem from="1765706392242" duration="4999000" />
     </task>
     <task id="LOCAL-00001" summary="refording gralde shit&#10;day 2">
       <option name="closed" value="true" />
@@ -574,7 +666,15 @@
       <option name="project" value="LOCAL" />
       <updated>1765706519839</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="adding 2023">
+      <option name="closed" value="true" />
+      <created>1765708090254</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1765708090254</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -592,8 +692,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="day 6 - refactored by using a matrix class of Char in stead of string" />
-    <MESSAGE value="day 6 - refactored by using a generic matrix class" />
     <MESSAGE value="day 6 - more refactoring." />
     <MESSAGE value="day 7" />
     <MESSAGE value="day 7 - refactored" />
@@ -617,7 +715,9 @@
     <MESSAGE value="refactoring generic functions" />
     <MESSAGE value="changed to maven/pom instead of gradle" />
     <MESSAGE value="adding 2024&#10;adding 2025" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding 2024&#10;adding 2025" />
+    <MESSAGE value="adding 2023" />
+    <MESSAGE value="adding 2022" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding 2022" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -629,7 +729,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/src/main/kotlin/adventofcode/PuzzleSolverAbstract.kt</url>
-          <line>81</line>
+          <line>64</line>
           <option name="timeStamp" value="57" />
         </line-breakpoint>
         <breakpoint type="java-exception">
@@ -648,5 +748,8 @@
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
     <select />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/AoC$AllKt.ic" NAME="AllKt Coverage Results" MODIFIED="1765710029215" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
   </component>
 </project>
