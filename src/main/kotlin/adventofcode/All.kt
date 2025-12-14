@@ -1,5 +1,12 @@
 package adventofcode
 
+fun main() {
+    runYear(year = 2025,
+        test = false,
+        verbose = false)
+}
+
+
 fun runYear (year: Int, test: Boolean, verbose: Boolean) {
     if (verbose) {
         (1..25).forEach { dayNr -> runDay(year, dayNr, test=test, true) }

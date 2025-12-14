@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a08f25da-438a-445a-b347-1839692f48ce" name="Changes" comment="changed to maven/pom instead of gradle" />
+    <list default="true" id="a08f25da-438a-445a-b347-1839692f48ce" name="Changes" comment="adding 2024&#10;adding 2025">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/adventofcode/All.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/adventofcode/All.kt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -38,71 +41,75 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Gradle.AdventOfCode2025 [:adventofcode.AllKt.main()].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.AdventOfCode2025 [:adventofcode.Day00Kt.main()].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.AdventOfCode2025 [:adventofcode.Day02Kt.main()].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.AdventOfCode2025 [:adventofcode.Day03Kt.main()].executor&quot;: &quot;Debug&quot;,
-    &quot;Gradle.AdventOfCode2025 [:adventofcode.Day04Kt.main()].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.AdventOfCode2025 [:adventofcode.Day05Kt.main()].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.AdventOfCode2025 [:adventofcode.Day06Kt.main()].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.AdventOfCode2025 [:adventofcode.Day07Kt.main()].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.AdventOfCode2025 [:adventofcode.Day08Kt.main()].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.AdventOfCode2025 [:adventofcode.Day09Kt.main()].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.AdventOfCode2025 [:adventofcode.Day10Kt.main()].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.AdventOfCode2025 [:adventofcode.Day11Kt.main()].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.AdventOfCode2025 [:adventofcode.Day12Kt.main()].executor&quot;: &quot;Run&quot;,
-    &quot;Kotlin.All24Kt.executor&quot;: &quot;Run&quot;,
-    &quot;Kotlin.All25Kt.executor&quot;: &quot;Run&quot;,
-    &quot;Kotlin.AllKt (1).executor&quot;: &quot;Run&quot;,
-    &quot;Kotlin.AllKt.executor&quot;: &quot;Run&quot;,
-    &quot;Kotlin.Day01Kt.executor&quot;: &quot;Run&quot;,
-    &quot;Kotlin.Day10Kt (1).executor&quot;: &quot;Run&quot;,
-    &quot;Kotlin.Day10Kt.executor&quot;: &quot;Run&quot;,
-    &quot;Kotlin.Day2401Kt.executor&quot;: &quot;Run&quot;,
-    &quot;Kotlin.Day2501Kt.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/martinschijf/Prive/AoC&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;/Users/martinschijf/Prive/AdventOfCode2025b/src/main/kotlin/Main.kt&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.3816092&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.AdventOfCode2025 [:adventofcode.AllKt.main()].executor": "Run",
+    "Gradle.AdventOfCode2025 [:adventofcode.Day00Kt.main()].executor": "Run",
+    "Gradle.AdventOfCode2025 [:adventofcode.Day02Kt.main()].executor": "Run",
+    "Gradle.AdventOfCode2025 [:adventofcode.Day03Kt.main()].executor": "Debug",
+    "Gradle.AdventOfCode2025 [:adventofcode.Day04Kt.main()].executor": "Run",
+    "Gradle.AdventOfCode2025 [:adventofcode.Day05Kt.main()].executor": "Run",
+    "Gradle.AdventOfCode2025 [:adventofcode.Day06Kt.main()].executor": "Run",
+    "Gradle.AdventOfCode2025 [:adventofcode.Day07Kt.main()].executor": "Run",
+    "Gradle.AdventOfCode2025 [:adventofcode.Day08Kt.main()].executor": "Run",
+    "Gradle.AdventOfCode2025 [:adventofcode.Day09Kt.main()].executor": "Run",
+    "Gradle.AdventOfCode2025 [:adventofcode.Day10Kt.main()].executor": "Run",
+    "Gradle.AdventOfCode2025 [:adventofcode.Day11Kt.main()].executor": "Run",
+    "Gradle.AdventOfCode2025 [:adventofcode.Day12Kt.main()].executor": "Run",
+    "Kotlin.All23Kt.executor": "Run",
+    "Kotlin.All24Kt.executor": "Run",
+    "Kotlin.All25Kt.executor": "Run",
+    "Kotlin.AllKt (1).executor": "Run",
+    "Kotlin.AllKt.executor": "Run",
+    "Kotlin.Day01Kt.executor": "Run",
+    "Kotlin.Day10Kt (1).executor": "Run",
+    "Kotlin.Day10Kt.executor": "Run",
+    "Kotlin.Day2301Kt.executor": "Run",
+    "Kotlin.Day2318Kt.executor": "Run",
+    "Kotlin.Day2401Kt.executor": "Run",
+    "Kotlin.Day2501Kt.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/martinschijf/Prive/AoC/data/2023",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "/Users/martinschijf/Prive/AdventOfCode2025b/src/main/kotlin/Main.kt",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.3816092",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/data/2023" />
+      <recent name="$PROJECT_DIR$/src/main/kotlin/adventofcode/year2023" />
       <recent name="$PROJECT_DIR$/src/main/kotlin/adventofcode" />
       <recent name="$PROJECT_DIR$/src/main/kotlin/adventofcode/year2024" />
       <recent name="$PROJECT_DIR$/data/2024" />
-      <recent name="$PROJECT_DIR$/data" />
-      <recent name="$PROJECT_DIR$/data/december11" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/data/2025" />
     </key>
     <key name="K2MoveDeclarationsDialog.RECENT_PACKAGE_KEY">
-      <recent name="adventofcode.year2024" />
+      <recent name="adventofcode.year2023" />
       <recent name="adventofcode" />
+      <recent name="adventofcode2023" />
+      <recent name="adventofcode.year2024" />
       <recent name="adventofcode.2025" />
-      <recent name="tool.mylambdas.collectioncombination" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.All25Kt">
-    <configuration name="All24Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="adventofcode.year2024.All24Kt" />
+  <component name="RunManager" selected="Kotlin.AllKt">
+    <configuration name="All23Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="adventofcode.year2023.All23Kt" />
       <module name="AoC" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -115,22 +122,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AllKt (1)" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+    <configuration name="AllKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="adventofcode.AllKt" />
       <module name="AoC" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Day2401Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="adventofcode.year2024.Day2401Kt" />
+    <configuration name="Day2301Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="adventofcode.year2023.Day2301Kt" />
       <module name="AoC" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Day2501Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="adventofcode.year2025.Day2501Kt" />
+    <configuration name="Day2318Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="adventofcode.year2023.Day2318Kt" />
       <module name="AoC" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -199,11 +206,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.AllKt" />
+        <item itemvalue="Kotlin.All23Kt" />
+        <item itemvalue="Kotlin.Day2318Kt" />
+        <item itemvalue="Kotlin.Day2301Kt" />
         <item itemvalue="Kotlin.All25Kt" />
-        <item itemvalue="Kotlin.All24Kt" />
-        <item itemvalue="Kotlin.Day2401Kt" />
-        <item itemvalue="Kotlin.Day2501Kt" />
-        <item itemvalue="Kotlin.AllKt (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -229,6 +236,7 @@
       <workItem from="1765693623340" duration="995000" />
       <workItem from="1765694781643" duration="4704000" />
       <workItem from="1765706315899" duration="25000" />
+      <workItem from="1765706392242" duration="1601000" />
     </task>
     <task id="LOCAL-00001" summary="refording gralde shit&#10;day 2">
       <option name="closed" value="true" />
@@ -558,7 +566,15 @@
       <option name="project" value="LOCAL" />
       <updated>1765695227547</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="adding 2024&#10;adding 2025">
+      <option name="closed" value="true" />
+      <created>1765706519839</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1765706519839</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -576,7 +592,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="day 6 - refactored by using a matrix class" />
     <MESSAGE value="day 6 - refactored by using a matrix class of Char in stead of string" />
     <MESSAGE value="day 6 - refactored by using a generic matrix class" />
     <MESSAGE value="day 6 - more refactoring." />
@@ -601,7 +616,8 @@
     <MESSAGE value="Adding powerSet to math functions" />
     <MESSAGE value="refactoring generic functions" />
     <MESSAGE value="changed to maven/pom instead of gradle" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed to maven/pom instead of gradle" />
+    <MESSAGE value="adding 2024&#10;adding 2025" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding 2024&#10;adding 2025" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
