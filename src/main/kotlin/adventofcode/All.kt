@@ -1,7 +1,7 @@
 package adventofcode
 
 fun main() {
-    runYear(year = 2025,
+    runYear(year = 2020,
         test = false,
         verbose = false)
 }
