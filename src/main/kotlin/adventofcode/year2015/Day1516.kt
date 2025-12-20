@@ -24,11 +24,11 @@ class Day1516(test: Boolean) : PuzzleSolverAbstract(test) {
     private val auntList = inputLines.map{ Aunt.of(it) }
 
     override fun resultPartOne(): Any {
-        return auntList.filter{ it.match(tickerTapeRequirements) }
+        return auntList.filter{ it.match(tickerTapeRequirements) }.first().name
     }
 
     override fun resultPartTwo(): Any {
-        return auntList.filter{ it.matchPart2(tickerTapeRequirements) }
+        return auntList.filter{ it.matchPart2(tickerTapeRequirements) }.first().name
     }
 }
 

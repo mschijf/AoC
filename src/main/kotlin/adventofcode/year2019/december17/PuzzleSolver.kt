@@ -26,11 +26,11 @@ class PuzzleSolver(test: Boolean) : PuzzleSolverAbstract(test) {
         val path = scaffoldMap.makePath()
         val movementFunctionList = scaffoldMap.makeMovementFunctionList(path, 3, 10)
         val mainMovementRoutine = scaffoldMap.makeMainMovementRoutine(path, movementFunctionList)
-        
-        println(path)
-        println(mainMovementRoutine)
-        movementFunctionList.forEachIndexed { index, movementFunction -> println("Function ${'A'+index}: $movementFunction") }
-        
+
+//        println(path)
+//        println(mainMovementRoutine)
+//        movementFunctionList.forEachIndexed { index, movementFunction -> println("Function ${'A'+index}: $movementFunction") }
+
         val robot = Robot(inputLines.first())
         val dustCollected = robot.visitAllScaffoldParts(mainMovementRoutine, movementFunctionList)
         return dustCollected.toString()
@@ -63,13 +63,13 @@ class ScaffoldMap(inputLine: String) {
                     col = 0
                 } else  {
                     if (ch.toChar() in listOf('<', '>', '^', 'v')) {
-                        robotPos = pos(row, col)
-                        robotDir = Direction.values().first{dir -> dir.directionSymbol == ch.toChar().toString()}
+                        robotPos = pos(col, row)
+                        robotDir = Direction.values().first{dir -> dir.directionSymbol.first() == ch.toChar()}
                     }
                     view[row][col] = ch.toChar()
                     col++
                 }
-                print(ch.toChar())
+//                print(ch.toChar())
             }
         }
     }
@@ -135,7 +135,7 @@ class ScaffoldMap(inputLine: String) {
                 return functionsList
             }
             return emptyList()
-        }         
+        }
 
         val possibleFunctionList = createPossibleFunctions(path, 20)
         for (possibleFunction in possibleFunctionList) {
@@ -196,11 +196,9 @@ class Robot(inputLine: String) {
         var lastOutput = 0L
         while (!program.output.isClosedForReceive) {
             lastOutput = program.output.receive()
-            if (lastOutput < 255)
-                print(lastOutput.toInt().toChar())
+//            if (lastOutput < 255)
+//                print(lastOutput.toInt().toChar())
         }
         lastOutput
     }
 }
-
-

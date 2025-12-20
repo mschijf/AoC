@@ -27,7 +27,7 @@ fun main() {
  * hopelijk is de rest van de code duidelijk, want ik heb ven geen zin om eer comments toe te voegen
  */
 
-class Day2322(test: Boolean) : PuzzleSolverAbstract(test, puzzleName="TBD", hasInputFile = true) {
+class Day2322(test: Boolean) : PuzzleSolverAbstract(test, puzzleName="Sand Slabs", hasInputFile = true) {
 
     private val brickList = inputLines.mapIndexed{index, s ->  Brick.of(index, s)}
     private val heightMap: Map<Int, MutableList<Brick>>// = mapOf<Int, MutableList<Brick>>()

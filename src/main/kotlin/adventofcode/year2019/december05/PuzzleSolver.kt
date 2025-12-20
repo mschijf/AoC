@@ -31,7 +31,7 @@ class PuzzleSolver(test: Boolean) : PuzzleSolverAbstract(test) {
     private fun runProgram(intCodeProgram: MutableList<Int>, inputList: List<Int>) {
         var i=0
         while (i < intCodeProgram.size) {
-            println("$i -> ${intCodeProgram[i]}")
+//            println("$i -> ${intCodeProgram[i]}")
             val opCode = intCodeProgram[i] % 100
             when (opCode) {
                 1 -> { // add

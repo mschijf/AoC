@@ -12,7 +12,7 @@ fun main() {
     Day2319(test=false).showResult()
 }
 
-class Day2319(test: Boolean) : PuzzleSolverAbstract(test, puzzleName="TBD", hasInputFile = true) {
+class Day2319(test: Boolean) : PuzzleSolverAbstract(test, puzzleName="Aplenty", hasInputFile = true) {
 
     private val workflowList = inputLines.splitByCondition { it.isEmpty() }.first().map { Workflow.of(it) }
     private val partRatingList = inputLines.splitByCondition { it.isEmpty() }.last().map{it.toPartsMap()}

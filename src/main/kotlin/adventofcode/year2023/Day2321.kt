@@ -10,7 +10,7 @@ fun main() {
     Day2321(test=false).showResult()
 }
 
-class Day2321(test: Boolean) : PuzzleSolverAbstract(test, puzzleName="TBD", hasInputFile = true) {
+class Day2321(test: Boolean) : PuzzleSolverAbstract(test, puzzleName="Step Counter", hasInputFile = true) {
 
     private val wholeGrid = inputAsGrid()
     private val gardenPlots = wholeGrid.filterValues { it == '.' || it == 'S' }.keys
@@ -81,7 +81,8 @@ class Day2321(test: Boolean) : PuzzleSolverAbstract(test, puzzleName="TBD", hasI
 
         // if we check the differences (use day 9 solution for that),
         val diffs = reachableTilesCountList.sequenceOfDifferences()
-        println(diffs.joinToString("\n"))
+//        println(diffs.joinToString("\n"))
+
         // we can find out that the differences (of the differences of the differences...) become constant:
         // we can find out that, this already is after four rounds for our input:
         //
@@ -97,7 +98,7 @@ class Day2321(test: Boolean) : PuzzleSolverAbstract(test, puzzleName="TBD", hasI
                 lastNumbers[i] += lastNumbers[i+1]
             }
         }
-        println("Correct answer:597102953699891")
+//        println("Correct answer:597102953699891")
         return lastNumbers[0]
     }
 

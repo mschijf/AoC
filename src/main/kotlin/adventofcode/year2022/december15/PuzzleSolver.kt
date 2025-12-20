@@ -47,7 +47,7 @@ class PuzzleSolver(test: Boolean) : PuzzleSolverAbstract(test) {
             val mergeRangeList = mergeRangeList(rangeList)
 
             if (mergeRangeList.none { it.first <= 0 && it.second >= maxXY }) {
-                println("Op regel $yLineIndex: $mergeRangeList")
+//                println("Op regel $yLineIndex: $mergeRangeList")
                 for (i in 1 until mergeRangeList.size) {
                     if (mergeRangeList[i-1].second in 0 until maxXY && mergeRangeList[i-1].second+2 == mergeRangeList[i].first) {
                         return (4000000L * (mergeRangeList[i-1].second+1) + yLineIndex).toString()

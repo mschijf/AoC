@@ -45,10 +45,10 @@ class PuzzleSolver(test: Boolean) : PuzzleSolverAbstract(test) {
         var countCubes = 0
         var cubeConnectedSides = 0
         for (cube in cubeList) {
-            countCubes++
-            if (countCubes % 100 == 0) {
-                println("Examined $countCubes of ${cubeList.size}")
-            }
+//            countCubes++
+//            if (countCubes % 100 == 0) {
+//                println("Examined $countCubes of ${cubeList.size}")
+//            }
             for (dir in directions) {
                 if (enclosed(cube.plus(dir), mutableSetOf(), 0, borders) ) {
                     cubeConnectedSides++

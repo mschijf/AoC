@@ -10,7 +10,7 @@ fun main() {
     Day2324(test=false).showResult()
 }
 
-class Day2324(test: Boolean) : PuzzleSolverAbstract(test, puzzleName="TBD", hasInputFile = true) {
+class Day2324(test: Boolean) : PuzzleSolverAbstract(test, puzzleName="Never Tell Me The Odds", hasInputFile = true) {
 
     private val movingPointList = inputLines.map{MovingPoint.of(it)}
 

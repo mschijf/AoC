@@ -32,7 +32,7 @@ class PuzzleSolver(test: Boolean) : PuzzleSolverAbstract(test) {
                 countTree++
             pos = (pos + slope).modX(forest.maxX)
         }
-        println("$slope $countTree")
+//        println("$slope $countTree")
         return countTree
     }
 }

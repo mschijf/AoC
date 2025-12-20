@@ -10,7 +10,7 @@ fun main() {
     Day2320(test=false).showResult()
 }
 
-class Day2320(test: Boolean) : PuzzleSolverAbstract(test, puzzleName="TBD", hasInputFile = true) {
+class Day2320(test: Boolean) : PuzzleSolverAbstract(test, puzzleName="Pulse Propagation", hasInputFile = true) {
 
     private fun makeModuleList(): Map<String, Module> {
         val moduleList1 = inputLines.map { Module.of(it) }.associateBy { it.name }
@@ -95,7 +95,7 @@ class Day2320(test: Boolean) : PuzzleSolverAbstract(test, puzzleName="TBD", hasI
             }
 
         }
-        println(monitored.values.reduce { acc, l ->  acc*l})
+//        println(monitored.values.reduce { acc, l ->  acc*l})
 
         return monitored.values.reduce { acc, l ->  lcm(acc, l)}
     }

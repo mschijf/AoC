@@ -9,7 +9,7 @@ fun main() {
     Day2325(test=false).showResult()
 }
 
-class Day2325(test: Boolean) : PuzzleSolverAbstract(test, puzzleName="TBD", hasInputFile = true) {
+class Day2325(test: Boolean) : PuzzleSolverAbstract(test, puzzleName="Snowverload", hasInputFile = true) {
 
     private val connections = inputLines
         .associate { it.substringBefore(": ") to it.substringAfter(": ").split(" ").toSet() }
@@ -34,8 +34,8 @@ class Day2325(test: Boolean) : PuzzleSolverAbstract(test, puzzleName="TBD", hasI
         val distanceList = components.map{it to distanceToAll(it)}
         val minDistance = distanceList.minOf { it.second }
         val bestConnected = distanceList.filter { it.second == minDistance }.map { it.first }
-        println(distanceList.sortedBy { it.second })
-        println(bestConnected)
+//        println(distanceList.sortedBy { it.second })
+//        println(bestConnected)
 
         val mostPromisingSet = mutableSetOf<Pair<String, String>>()
         for (i in 0 until bestConnected.size-1) {
@@ -45,7 +45,7 @@ class Day2325(test: Boolean) : PuzzleSolverAbstract(test, puzzleName="TBD", hasI
                 if (connectionLR in singleConnections || connectionRL in singleConnections) {
                     mostPromisingSet += connectionRL
                     mostPromisingSet += connectionLR
-                    println(connectionLR)
+//                    println(connectionLR)
                 }
             }
         }

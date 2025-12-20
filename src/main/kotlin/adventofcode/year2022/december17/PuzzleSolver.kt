@@ -1,7 +1,6 @@
 package adventofcode.year2022.december17
 
 import adventofcode.PuzzleSolverAbstract
-import java.text.DecimalFormat
 
 fun main() {
     PuzzleSolver(test=false).showResult()
@@ -51,12 +50,12 @@ class PuzzleSolver(test: Boolean) : PuzzleSolverAbstract(test) {
                 val initialRounds = 1_000_000_000_000 - countRepeatingCycles * cycleLength
                 val startHeight = stateList[initialRounds.toInt()].height
 
-                println("THERE IT IS!  $index --> ${stateList.size}")
-                println("   Cycle Length (in rounds)   : $cycleLength")
-                println("   Repeating Cycles           : " + DecimalFormat("#,###.##").format(countRepeatingCycles))
-                println("   Height per Cycle           : $heightPerCycle")
-                println("   Initial Rounds             : $initialRounds")
-                println("   Height after Initial Rounds: $startHeight")
+//                println("THERE IT IS!  $index --> ${stateList.size}")
+//                println("   Cycle Length (in rounds)   : $cycleLength")
+//                println("   Repeating Cycles           : " + DecimalFormat("#,###.##").format(countRepeatingCycles))
+//                println("   Height per Cycle           : $heightPerCycle")
+//                println("   Initial Rounds             : $initialRounds")
+//                println("   Height after Initial Rounds: $startHeight")
 
                 return (countRepeatingCycles * heightPerCycle + startHeight).toString()
 

@@ -1,9 +1,15 @@
 package adventofcode
 
 fun main() {
-    runYear(year = 2017,
-        test = false,
-        verbose = false)
+    for (year in 2015..2025) {
+        runYear(year = year,
+            test = false,
+            verbose = false)
+
+    }
+//    runYear(year = 2025,
+//        test = false,
+//        verbose = false)
 }
 
 
@@ -38,7 +44,7 @@ fun runDay(year: Int, dayNr: Int, test: Boolean, verbose: Boolean, warmingUp: Bo
                 print("    ${"Warming up ...".padEnd(30, ' ')}: ")
                 print("%4d.%03d ms   ".format(timePassed0 / 1_000_000, timePassed0 % 1_000))
             } else {
-                print(" ${result.dayOfMonth.toString().padStart(2, ' ')} ${result.name.padEnd(30, ' ')}: ")
+                print(" ${result.dayOfMonth.toString().padStart(2, ' ')} ${result.name.take(30).padEnd(30, ' ')}: ")
                 print("%4d.%03d ms   ".format(timePassed0 / 1_000_000, timePassed0 % 1_000))
                 print("%4d.%03d ms   ".format(result.timePassedPart1Ns / 1_000_000, result.timePassedPart1Ns % 1_000))
                 print("%4d.%03d ms   ".format(result.timePassedPart2Ns / 1_000_000, result.timePassedPart2Ns % 1_000))
@@ -54,6 +60,8 @@ fun runDay(year: Int, dayNr: Int, test: Boolean, verbose: Boolean, warmingUp: Bo
     } catch (_: ClassNotFoundException) {
         if (verbose) {
             println("$fullClassName not implemented (yet)")
+        } else {
+            println("No class/implementation found for $year, Daynumber $dayNr ")
         }
     } catch (otherE: Exception) {
         println("$fullClassName runs with exception ${otherE.cause}")
@@ -72,7 +80,12 @@ private fun determineFullClassName(year: Int, dayNr: Int): String {
         val className = "PuzzleSolver"
         val packageName = "adventofcode.year$year.december%02d".format(dayNr)
 
-        val kClass = Class.forName("$packageName.$className").kotlin
-        "$packageName.$className"
+        try {
+            val kClass = Class.forName("$packageName.$className").kotlin
+            "$packageName.$className"
+        } catch (_: ClassNotFoundException) {
+            "No class/implementation found for $year, Daynumber $dayNr "
+        }
+
     }
 }

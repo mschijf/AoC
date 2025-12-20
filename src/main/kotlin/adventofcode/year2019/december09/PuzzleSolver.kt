@@ -62,7 +62,7 @@ class Boost(baseIntCodeProgram: List<Long>) {
                 4 -> { // output
                     val index1 = getIndex(currentIndex, 1)
                     lastOutput = intCodeProgram[index1]
-                    println("Output: $lastOutput")
+//                    println("Output: $lastOutput")
                     currentIndex += 2
 //                    return lastOutput
                 }

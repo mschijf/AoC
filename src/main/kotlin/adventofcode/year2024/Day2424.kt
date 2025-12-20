@@ -16,12 +16,12 @@ class Day2424(test: Boolean) : PuzzleSolverAbstract(test, puzzleName = "Crossed 
     private val device = Device.of(splittedInput[1])
 
     override fun resultPartOne(): Any {
-        println("correct:       51745744348272")
+//        println("correct:       51745744348272")
         return device.simulate(wireMap)?.toLong(2)?:throw Exception("Some error")
     }
 
     override fun resultPartTwo(): Any {
-        println("correct:       bfq,bng,fjp,hkh,hmt,z18,z27,z31")
+//        println("correct:       bfq,bng,fjp,hkh,hmt,z18,z27,z31")
         return findWrongPairs()
             .flatMap { listOf(device.getOutputName(it.first), device.getOutputName(it.second)) }
             .sorted()

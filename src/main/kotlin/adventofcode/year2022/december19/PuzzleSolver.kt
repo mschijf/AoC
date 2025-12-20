@@ -19,13 +19,13 @@ class PuzzleSolver(test: Boolean) : PuzzleSolverAbstract(test) {
         for (bluePrint in bluePrintList) {
             val startTime = currentTimeMillis()
             val executor = Executor(bluePrint)
-            print("Start Blueprint ${bluePrint.number} of ${bluePrintList.size}")
+//            print("Start Blueprint ${bluePrint.number} of ${bluePrintList.size}")
 
             nodeCount = 0L
             cache.forEach { it.clear() }
             val gc = solver(executor, 24, -1)
             val timePassed = currentTimeMillis() - startTime
-            println(" --> $gc time: $timePassed ms and $nodeCount nodes visited")
+//            println(" --> $gc time: $timePassed ms and $nodeCount nodes visited")
 
             quality += gc*bluePrint.number
         }
@@ -37,12 +37,12 @@ class PuzzleSolver(test: Boolean) : PuzzleSolverAbstract(test) {
         for (bluePrint in bluePrintList.dropLast(max(0, bluePrintList.size-3))) {
             val startTime = currentTimeMillis()
             val executor = Executor(bluePrint)
-            print("Start Blueprint ${bluePrint.number} of ${bluePrintList.size}")
+//            print("Start Blueprint ${bluePrint.number} of ${bluePrintList.size}")
 
             cache.forEach { it.clear() }
             val gc = solver(executor, 32, -1)
             val timePassed = currentTimeMillis() - startTime
-            println(" --> $gc time: $timePassed ms")
+//            println(" --> $gc time: $timePassed ms")
 
             quality *= gc
         }

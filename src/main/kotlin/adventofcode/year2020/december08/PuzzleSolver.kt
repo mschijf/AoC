@@ -17,7 +17,7 @@ class PuzzleSolver(test: Boolean) : PuzzleSolverAbstract(test) {
     override fun resultPartTwo(): String {
         program.actionList.forEachIndexed { index, action ->
             if (action.operation != "acc") {
-                println(index)
+//                println(index)
                 val hasEnded = program.executeWithChange(index)
                 if (hasEnded)
                     return program.accumulator.toString()

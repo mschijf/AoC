@@ -11,13 +11,11 @@ fun main() {
 class Day1609(test: Boolean) : PuzzleSolverAbstract(test) {
 
     override fun resultPartOne(): Any {
-        inputLines.forEach{println(it.decompress().length)}
-        return ""
+        return inputLines.first().decompress().length
     }
 
     override fun resultPartTwo(): Any {
-        inputLines.forEach{println(it.decompressV2Length())}
-        return ""
+        return inputLines.first().decompressV2Length()
     }
 
 
