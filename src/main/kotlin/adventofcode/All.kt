@@ -1,7 +1,7 @@
 package adventofcode
 
 fun main() {
-    runYear(year = 2021,
+    runYear(year = 2022,
         test = false,
         verbose = false)
 }
@@ -65,7 +65,7 @@ fun runDay(year: Int, dayNr: Int, test: Boolean, verbose: Boolean, warmingUp: Bo
 private fun determineFullClassName(year: Int, dayNr: Int): String {
 
     return try {
-        val className = "Day%02d%02d".format(year - 2000, dayNr)
+        val className = "Day%02d".format(dayNr)
         val packageName = "adventofcode.year$year"
 
         val kClass = Class.forName("$packageName.$className").kotlin
