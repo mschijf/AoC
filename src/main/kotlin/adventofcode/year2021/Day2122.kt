@@ -1,14 +1,14 @@
-package adventofcode.year2021.december22
+package adventofcode.year2021
 
 import adventofcode.PuzzleSolverAbstract
 import tool.coordinate.threedimensional.Cuboid
 import tool.coordinate.threedimensional.CuboidSet
 
 fun main() {
-    PuzzleSolver(test=false).showResult()
+    Day2122(test=false).showResult()
 }
 
-class PuzzleSolver(test: Boolean) : PuzzleSolverAbstract(test) {
+class Day2122(test: Boolean) : PuzzleSolverAbstract(test) {
 
     override fun resultPartOne(): String {
         val actionList = inputLines.map {Action(it)}.filter{it.inRange(-50,50)}

@@ -1,12 +1,12 @@
-package adventofcode.year2021.december16
+package adventofcode.year2021
 
 import adventofcode.PuzzleSolverAbstract
 
 fun main() {
-    PuzzleSolver(test=false).showResult()
+    Day2116(test=false).showResult()
 }
 
-class PuzzleSolver(test: Boolean) : PuzzleSolverAbstract(test) {
+class Day2116(test: Boolean) : PuzzleSolverAbstract(test) {
     private val bitString = inputLines.first().map{toBits(it)}.joinToString(separator = "")
 
     override fun resultPartOne(): String {

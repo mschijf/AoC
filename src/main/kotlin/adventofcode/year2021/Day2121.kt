@@ -1,12 +1,12 @@
-package adventofcode.year2021.december21
+package adventofcode.year2021
 
 import adventofcode.PuzzleSolverAbstract
 
 fun main() {
-    PuzzleSolver(test=false).showResult()
+    Day2121(test=false).showResult()
 }
 
-class PuzzleSolver(test: Boolean) : PuzzleSolverAbstract(test) {
+class Day2121(test: Boolean) : PuzzleSolverAbstract(test) {
 
     override fun resultPartOne(): String {
         val playerPos = inputLines.map {it.substringAfter("starting position: ").toInt() - 1}.toIntArray()

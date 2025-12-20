@@ -1,16 +1,15 @@
-package adventofcode.year2021.december25
+package adventofcode.year2021
 
 import tool.coordinate.twodimensional.Point
 import tool.coordinate.twodimensional.pos
-import tool.coordinate.twodimensional.printAsGrid
 
 import adventofcode.PuzzleSolverAbstract
 
 fun main() {
-    PuzzleSolver(test=false).showResult()
+    Day2125(test=false).showResult()
 }
 
-class PuzzleSolver(test: Boolean) : PuzzleSolverAbstract(test) {
+class Day2125(test: Boolean) : PuzzleSolverAbstract(test) {
 
     private var seaFloor = inputLines
         .flatMapIndexed { y, line -> line.mapIndexed { x, ch ->  pos(x,y) to ch} }

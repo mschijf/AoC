@@ -1,4 +1,4 @@
-package adventofcode.year2021.december19
+package adventofcode.year2021
 
 import tool.coordinate.threedimensional.Point3D
 import tool.mylambdas.collectioncombination.mapCombinedItems
@@ -7,10 +7,10 @@ import adventofcode.PuzzleSolverAbstract
 import tool.mylambdas.splitByCondition
 
 fun main() {
-    PuzzleSolver(test=false).showResult()
+    Day2119(test=false).showResult()
 }
 
-class PuzzleSolver(test: Boolean) : PuzzleSolverAbstract(test) {
+class Day2119(test: Boolean) : PuzzleSolverAbstract(test) {
 
     private val scannerList = inputLines.splitByCondition { it.isBlank() }.map{Scanner.of(it)}
 

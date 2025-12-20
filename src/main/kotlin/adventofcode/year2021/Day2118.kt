@@ -1,14 +1,14 @@
-package adventofcode.year2021.december18
+package adventofcode.year2021
 
 import java.lang.Long.max
 
 import adventofcode.PuzzleSolverAbstract
 
 fun main() {
-    PuzzleSolver(test=false).showResult()
+    Day2118(test=false).showResult()
 }
 
-class PuzzleSolver(test: Boolean) : PuzzleSolverAbstract(test) {
+class Day2118(test: Boolean) : PuzzleSolverAbstract(test) {
 
     override fun resultPartOne(): String {
         return inputLines

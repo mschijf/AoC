@@ -1,12 +1,12 @@
-package adventofcode.year2021.december20
+package adventofcode.year2021
 
 import adventofcode.PuzzleSolverAbstract
 
 fun main() {
-    PuzzleSolver(test=false).showResult()
+    Day2120(test=false).showResult()
 }
 
-class PuzzleSolver(test: Boolean) : PuzzleSolverAbstract(test) {
+class Day2120(test: Boolean) : PuzzleSolverAbstract(test) {
 
     private val enhancementAlgorithmString = inputLines.first()
 

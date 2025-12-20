@@ -1,4 +1,4 @@
-package adventofcode.year2021.december23
+package adventofcode.year2021
 
 import kotlin.math.absoluteValue
 import kotlin.math.min
@@ -6,10 +6,10 @@ import kotlin.math.min
 import adventofcode.PuzzleSolverAbstract
 
 fun main() {
-    PuzzleSolver(test=true).showResult()
+    Day2123(test=true).showResult()
 }
 
-class PuzzleSolver(test: Boolean) : PuzzleSolverAbstract(test) {
+class Day2123(test: Boolean) : PuzzleSolverAbstract(test) {
 
     override fun resultPartOne(): String {
         val board = Board(inputLines)

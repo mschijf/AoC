@@ -1,4 +1,4 @@
-package adventofcode.year2021.december24
+package adventofcode.year2021
 
 import java.lang.Long.max
 import kotlin.math.min
@@ -10,12 +10,13 @@ import kotlin.math.min
  */
 
 import adventofcode.PuzzleSolverAbstract
+import kotlin.collections.iterator
 
 fun main() {
-    PuzzleSolver(test=false).showResult()
+    Day2124(test=false).showResult()
 }
 
-class PuzzleSolver(test: Boolean) : PuzzleSolverAbstract(test) {
+class Day2124(test: Boolean) : PuzzleSolverAbstract(test) {
 
     val programPartParameterList = inputLines.chunked(18).map{ProgramPartParameter.of(it)}
 

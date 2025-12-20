@@ -1,4 +1,4 @@
-package adventofcode.year2021.december17
+package adventofcode.year2021
 
 import java.lang.Integer.max
 import java.lang.Integer.min
@@ -6,10 +6,10 @@ import java.lang.Integer.min
 import adventofcode.PuzzleSolverAbstract
 
 fun main() {
-    PuzzleSolver(test=false).showResult()
+    Day2117(test=false).showResult()
 }
 
-class PuzzleSolver(test: Boolean) : PuzzleSolverAbstract(test) {
+class Day2117(test: Boolean) : PuzzleSolverAbstract(test) {
     private val targetMinX = inputLines.first().substringAfter("target area: x=").substringBefore("..").toInt()
     private val targetMaxX = inputLines.first().substringAfter("..").substringBefore(",").toInt()
     private val targetMinY = inputLines.first().substringAfter(", y=").substringBefore("..").toInt()
