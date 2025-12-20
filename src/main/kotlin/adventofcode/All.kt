@@ -1,15 +1,9 @@
 package adventofcode
 
 fun main() {
-    for (year in 2015..2025) {
-        runYear(year = year,
-            test = false,
-            verbose = false)
-
-    }
-//    runYear(year = 2025,
-//        test = false,
-//        verbose = false)
+    runYear(year = 2021,
+        test = false,
+        verbose = false)
 }
 
 
