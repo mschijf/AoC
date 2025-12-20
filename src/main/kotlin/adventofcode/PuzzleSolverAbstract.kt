@@ -28,9 +28,11 @@ abstract class PuzzleSolverAbstract (
     }
 
     fun executeOnly(): PuzzleResultData{
-        val timePassed1 = getResultTimeOnly() { resultPartOne() }
-        val timePassed2 = getResultTimeOnly() { resultPartTwo() }
-        return PuzzleResultData(dayOfMonth, puzzleName, timePassed1, timePassed2)
+        var resultPart1: Any = "N/A"
+        var resultPart2: Any = "N/A"
+        val timePassedPart1Ns = getResultTimeOnly() { resultPart1 = resultPartOne() }
+        val timePassedPart2Ns = getResultTimeOnly() { resultPart2 = resultPartTwo() }
+        return PuzzleResultData(dayOfMonth, puzzleName, timePassedPart1Ns, timePassedPart2Ns, resultPart1, resultPart2)
     }
 
     private fun printResult(puzzlePart: Int, getResult: () -> String ) {
@@ -80,7 +82,7 @@ abstract class PuzzleSolverAbstract (
         val file = File("$path/$fileName")
         val inputLines = if (file.exists()) file.bufferedReader().readLines() else emptyList()
         if (inputLines.isEmpty() && hasInputFile)
-            throw Exception("No input lines!!")
+            println("No input lines!!")
         return inputLines
     }
 

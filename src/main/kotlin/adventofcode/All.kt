@@ -1,7 +1,7 @@
 package adventofcode
 
 fun main() {
-    runYear(year = 2020,
+    runYear(year = 2017,
         test = false,
         verbose = false)
 }
@@ -12,11 +12,11 @@ fun runYear (year: Int, test: Boolean, verbose: Boolean) {
         (1..25).forEach { dayNr -> runDay(year, dayNr, test=test, true) }
     } else {
         println()
-        println("Day Name                                   Init      Puzzle 1      Puzzle 2")
-        println("---------------------------------------------------------------------------")
+        println("Day Name                                   Init      Puzzle 1      Puzzle 2                                     Part 1                                     Part 2")
+        println("-----------------------------------------------------------------------------------------------------------------------------------------------------------------")
         runDay(year, 1, test=false, false, true)
         (1..25).forEach { dayNr -> runDay(year, dayNr, test=false, false) }
-        println("---------------------------------------------------------------------------")
+        println("-----------------------------------------------------------------------------------------------------------------------------------------------------------------")
 
     }
 }
@@ -42,6 +42,11 @@ fun runDay(year: Int, dayNr: Int, test: Boolean, verbose: Boolean, warmingUp: Bo
                 print("%4d.%03d ms   ".format(timePassed0 / 1_000_000, timePassed0 % 1_000))
                 print("%4d.%03d ms   ".format(result.timePassedPart1Ns / 1_000_000, result.timePassedPart1Ns % 1_000))
                 print("%4d.%03d ms   ".format(result.timePassedPart2Ns / 1_000_000, result.timePassedPart2Ns % 1_000))
+
+                print("%40s".format(result.resultPart1))
+                print ("   ")
+                print("%40s".format(result.resultPart2))
+
             }
             println()
         }
