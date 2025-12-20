@@ -1,6 +1,8 @@
 package adventofcode.year2021.december22
 
 import adventofcode.PuzzleSolverAbstract
+import tool.coordinate.threedimensional.Cuboid
+import tool.coordinate.threedimensional.CuboidSet
 
 fun main() {
     PuzzleSolver(test=false).showResult()
