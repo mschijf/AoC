@@ -1,7 +1,7 @@
 package adventofcode
 
 fun main() {
-    runYear(year = 2022,
+    runYear(year = 2020,
         test = false,
         verbose = false)
 }
@@ -17,69 +17,82 @@ fun runYear (year: Int, test: Boolean, verbose: Boolean) {
         runDay(year, 1, test=false, false, true)
         (1..25).forEach { dayNr -> runDay(year, dayNr, test=false, false) }
         println("-----------------------------------------------------------------------------------------------------------------------------------------------------------------------")
-
     }
 }
 
 fun runDay(year: Int, dayNr: Int, test: Boolean, verbose: Boolean, warmingUp: Boolean = false) {
 
     val fullClassName = determineFullClassName(year, dayNr)
-    try {
-        val startTime = System.nanoTime()
-        val kClass = Class.forName(fullClassName).kotlin
-        val methodName = if (verbose) "showResultShort" else "executeOnly"
-        val method = kClass.members.find { it.name == methodName }
-        val obj = kClass.constructors.first().call(test)
-        val timePassed0 = System.nanoTime() - startTime
-        val response = method!!.call(obj)
-        if (!verbose) {
-            val result = response as PuzzleResultData
-            if (warmingUp) {
-                print("    ${"Warming up ...".padEnd(30, ' ')}: ")
-                print("%6d.%03d ms   ".format(timePassed0 / 1_000_000, timePassed0 % 1_000))
-            } else {
-                print(" ${result.dayOfMonth.toString().padStart(2, ' ')} ${result.name.take(30).padEnd(30, ' ')}: ")
-                print("%6d.%03d ms   ".format(timePassed0 / 1_000_000, timePassed0 % 1_000))
-                print("%6d.%03d ms   ".format(result.timePassedPart1Ns / 1_000_000, result.timePassedPart1Ns % 1_000))
-                print("%6d.%03d ms   ".format(result.timePassedPart2Ns / 1_000_000, result.timePassedPart2Ns % 1_000))
+    if (fullClassName != null) {
+        try {
+            val startTime = System.nanoTime()
+            val kClass = Class.forName(fullClassName).kotlin
+            val methodName = if (verbose) "showResultShort" else "executeOnly"
+            val method = kClass.members.find { it.name == methodName }
+            val obj = kClass.constructors.first().call(test)
+            val timePassed0 = System.nanoTime() - startTime
+            val response = method!!.call(obj)
+            if (!verbose) {
+                val result = response as PuzzleResultData
+                if (warmingUp) {
+                    print("    ${"Warming up ...".padEnd(30, ' ')}: ")
+                    print("%6d.%03d ms   ".format(timePassed0 / 1_000_000, timePassed0 % 1_000))
+                } else {
+                    print(" ${result.dayOfMonth.toString().padStart(2, ' ')} ${result.name.take(30).padEnd(30, ' ')}: ")
+                    print("%6d.%03d ms   ".format(timePassed0 / 1_000_000, timePassed0 % 1_000))
+                    print(
+                        "%6d.%03d ms   ".format(
+                            result.timePassedPart1Ns / 1_000_000,
+                            result.timePassedPart1Ns % 1_000
+                        )
+                    )
+                    print(
+                        "%6d.%03d ms   ".format(
+                            result.timePassedPart2Ns / 1_000_000,
+                            result.timePassedPart2Ns % 1_000
+                        )
+                    )
 
-                print("%40s".format(result.resultPart1))
-                print ("   ")
-                print("%40s".format(result.resultPart2))
+                    print("%40s".format(result.resultPart1))
+                    print("   ")
+                    print("%40s".format(result.resultPart2))
 
+                }
+                println()
             }
-            println()
-        }
 
-    } catch (_: ClassNotFoundException) {
-        if (verbose) {
-            println("$fullClassName not implemented (yet)")
-        } else {
+        } catch (_: ClassNotFoundException) {
             println("No class/implementation found for $year, Daynumber $dayNr ")
+        } catch (otherE: Exception) {
+            println("$fullClassName runs with exception ${otherE.cause}")
         }
-    } catch (otherE: Exception) {
-        println("$fullClassName runs with exception ${otherE.cause}")
+    } else {
+        println("No class/implementation found for $year, Daynumber $dayNr ")
     }
 }
 
-private fun determineFullClassName(year: Int, dayNr: Int): String {
+private fun determineFullClassName(year: Int, dayNr: Int): String? {
+    val classNameDay = "Day%02d".format(dayNr)
+    val packageNameYear = "adventofcode.year$year"
+    val classNameSolver = "PuzzleSolver"
+    val packageNameYearPlusMonthDay = "adventofcode.year$year.december%02d".format(dayNr)
+    val packageNameYearPlusDay = "adventofcode.year$year.day%02d".format(dayNr)
+    return if (fullClassNameExists(packageNameYear, classNameDay)) {
+        "$packageNameYear.$classNameDay"
+    } else if (fullClassNameExists(packageNameYearPlusMonthDay, classNameSolver)) {
+        "$packageNameYearPlusMonthDay.$classNameSolver"
+    }  else if (fullClassNameExists(packageNameYearPlusDay, classNameDay)) {
+        "$packageNameYearPlusDay.$classNameDay"
+    } else {
+        null
+    }
+}
 
+private fun fullClassNameExists(packageName: String, className: String) : Boolean {
     return try {
-        val className = "Day%02d".format(dayNr)
-        val packageName = "adventofcode.year$year"
-
-        val kClass = Class.forName("$packageName.$className").kotlin
-        "$packageName.$className"
+        Class.forName("$packageName.$className").kotlin
+        true
     } catch (_: ClassNotFoundException) {
-        val className = "PuzzleSolver"
-        val packageName = "adventofcode.year$year.december%02d".format(dayNr)
-
-        try {
-            val kClass = Class.forName("$packageName.$className").kotlin
-            "$packageName.$className"
-        } catch (_: ClassNotFoundException) {
-            "No class/implementation found for $year, Daynumber $dayNr "
-        }
-
+        false
     }
 }
