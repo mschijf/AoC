@@ -1,4 +1,4 @@
-package adventofcode.year2020.december20
+package adventofcode.year2020.day20
 
 data class TileConfig(
     val tile: Tile,

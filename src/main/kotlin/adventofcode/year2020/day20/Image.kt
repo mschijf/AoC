@@ -1,4 +1,4 @@
-package adventofcode.year2020.december20
+package adventofcode.year2020.day20
 
 class Image(arrangement: Arrangement) {
     private val compressedImage = arrangement.mergeTiles()

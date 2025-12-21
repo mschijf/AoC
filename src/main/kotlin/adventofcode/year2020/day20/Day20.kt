@@ -1,4 +1,4 @@
-package adventofcode.year2020.december20
+package adventofcode.year2020.day20
 
 import adventofcode.PuzzleSolverAbstract
 import tool.mylambdas.splitByCondition
