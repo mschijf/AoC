@@ -22,6 +22,9 @@ data class Point private constructor(
     val gridOrientation: Boolean = true,
     val x: Int, val y: Int) {
 
+    val row get() = y
+    val col get() = x
+
     override fun toString() = "($x, $y)"
 
     private fun above(other: Point) = if (gridOrientation) this.y < other.y else this.y > other.y
@@ -130,12 +133,24 @@ data class Point private constructor(
 
 private data class XYPair(val x: Int, val y: Int) {
     companion object {
-        fun of(input: String) = input
-            .removeSurrounding("<", ">")
-            .removeSurrounding("(", ")")
-            .removeSurrounding("[", "]")
-            .removeSurrounding("{", "}")
-            .split(",").run { XYPair(this[0].trim().toInt(), this[1].trim().toInt()) }
+        fun of(input: String): XYPair {
+            val cleanInput = input
+                .removeSurrounding("<", ">")
+                .removeSurrounding("(", ")")
+                .removeSurrounding("[", "]")
+                .removeSurrounding("{", "}")
+
+            return if (cleanInput.contains("x=") && cleanInput.contains("y=")) {
+                //x=15, y=3
+                val x = cleanInput.substringAfter("x=").trim().takeWhile { it == '-' || it.isDigit() }
+                val y = cleanInput.substringAfter("y=").trim().takeWhile { it == '-' ||  it.isDigit() }
+                return XYPair(x.toInt(), y.toInt())
+            } else {
+                cleanInput
+                    .split(",")
+                    .run { XYPair(this[0].trim().toInt(), this[1].trim().toInt()) }
+            }
+        }
     }
 }
 
