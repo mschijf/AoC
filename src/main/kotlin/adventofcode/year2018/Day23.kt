@@ -1,4 +1,4 @@
-package adventofcode.year2018.december23
+package adventofcode.year2018
 
 import adventofcode.PuzzleSolverAbstract
 import tool.coordinate.threedimensional.Point3D
@@ -54,6 +54,8 @@ class Day23(test: Boolean) : PuzzleSolverAbstract(test) {
             divider /= 10
         }
         return start.distanceTo(Point3D.origin)
+//
+//        return ginsbergSolutionWithBronKerbosch()
     }
 
     private fun Point3D.makeCube(cubeSize: Int): List<Point3D> {
@@ -79,6 +81,15 @@ class Day23(test: Boolean) : PuzzleSolverAbstract(test) {
     private fun Point3D.mul(factor: Int): Point3D =
         Point3D(this.x*factor, this.y*factor, this.z*factor)
 
+//----------------------------------------------------------------------------------------------------------------------
+
+data class NanoBot(val location: Point3D, val range: Int) {
+    fun withinRangeOfSharedPoint(other: NanoBot): Boolean =
+        location.distanceTo(other.location) <= (range + other.range)
+}
+
+//----------------------------------------------------------------------------------------------------------------------
+
     /******************************************************************************************************************/
 
     /**
@@ -102,11 +113,34 @@ class Day23(test: Boolean) : PuzzleSolverAbstract(test) {
 
 }
 
-//----------------------------------------------------------------------------------------------------------------------
+class BronKerbosch<T>(private val neighbors: Map<T, Set<T>>) {
 
-data class NanoBot(val location: Point3D, val range: Int) {
-    fun withinRangeOfSharedPoint(other: NanoBot): Boolean =
-        location.distanceTo(other.location) <= (range + other.range)
+    private var bestR: Set<T> = emptySet()
+
+    fun largestClique(): Set<T> {
+        execute(neighbors.keys)
+        return bestR
+    }
+
+    private fun execute(
+        p: Set<T>,
+        r: Set<T> = emptySet(),
+        x: Set<T> = emptySet()
+    ) {
+        if (p.isEmpty() && x.isEmpty()) {
+            // We have found a potential best R value, compare it to the best so far.
+            if (r.size > bestR.size) bestR = r
+        } else {
+            val mostNeighborsOfPandX: T = (p + x).maxBy { neighbors.getValue(it).size }!!
+            val pWithoutNeighbors = p.minus(neighbors[mostNeighborsOfPandX]!!)
+            pWithoutNeighbors.forEach { v ->
+                val neighborsOfV = neighbors[v]!!
+                execute(
+                    p.intersect(neighborsOfV),
+                    r + v,
+                    x.intersect(neighborsOfV)
+                )
+            }
+        }
+    }
 }
-
-//----------------------------------------------------------------------------------------------------------------------

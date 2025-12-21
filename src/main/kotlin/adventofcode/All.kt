@@ -1,7 +1,7 @@
 package adventofcode
 
 fun main() {
-    runYear(year = 2020,
+    runYear(year = 2018,
         test = false,
         verbose = false)
 }
@@ -83,6 +83,8 @@ private fun determineFullClassName(year: Int, dayNr: Int): String? {
         "$packageNameYearPlusMonthDay.$classNameSolver"
     }  else if (fullClassNameExists(packageNameYearPlusDay, classNameDay)) {
         "$packageNameYearPlusDay.$classNameDay"
+    } else if (fullClassNameExists(packageNameYearPlusMonthDay, classNameDay)) {
+        "$packageNameYearPlusMonthDay.$classNameDay"
     } else {
         null
     }
