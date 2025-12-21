@@ -1,15 +1,55 @@
-package adventofcode.year2018.december03
+package adventofcode.year2018
 
+import adventofcode.PuzzleSolverAbstract
 import tool.coordinate.twodimensional.Point
 import tool.coordinate.twodimensional.pos
+import tool.mylambdas.collectioncombination.mapCombinedItems
 import kotlin.math.max
 import kotlin.math.min
 
+fun main() {
+    Day03(test=false).showResult()
+}
+
+class Day03(test: Boolean) : PuzzleSolverAbstract(test) {
+
+    private val rectangleList = inputLines.map{Rectangle.fromString(it)}
+
+    override fun resultPartOne(): Any {
+        return rectangleList
+            .mapCombinedItems { rectangle, rectangle2 -> rectangle.intersectionOrNull(rectangle2) }
+            .fold(RectangleSet()) {acc, next -> acc.plus(next)}
+            .area()
+
+// Todd Ginsberg Solution
 //
-// #1 @ 1,3: 4x4
-// #2 @ 3,1: 4x4
-// #3 @ 5,5: 2x2
-//
+//        return rectangleList
+//            .flatMap { it.asCoordinates() }  // List<Coordinate>
+//            .groupingBy { it }
+//            .eachCount()                     // Map<Coordinate, Int>
+//            .count { it.value > 1 }
+    }
+
+    override fun resultPartTwo(): Any {
+        var firstNonOverlapped = 0
+        for (i in 0 until rectangleList.size) {
+            var hasOverlap = false
+            for (j in 0 until rectangleList.size) {
+                if (i != j && rectangleList[i].intersectionOrNull(rectangleList[j]) != null) {
+                    hasOverlap = true
+                    break
+                }
+            }
+            if (!hasOverlap) {
+                firstNonOverlapped = i+1
+                break
+            }
+        }
+        return firstNonOverlapped
+    }
+}
+
+//======================================================================================================================
 
 data class Rectangle(
     val minX: Int,
@@ -18,6 +58,11 @@ data class Rectangle(
     val maxY: Int) {
 
     companion object {
+        //
+        // #1 @ 1,3: 4x4
+        // #2 @ 3,1: 4x4
+        // #3 @ 5,5: 2x2
+        //
         fun fromString(s: String): Rectangle {
             val width = s.substringAfter(": ").substringBefore("x").toInt()
             val height = s.substringAfter("x").toInt()
@@ -89,7 +134,26 @@ data class Rectangle(
         }
         return result
     }
-
-
-
 }
+
+data class RectangleSet(
+    private val rectangleList: List<Rectangle> = emptyList()) {
+
+    fun area() = rectangleList.sumOf { rectangle -> rectangle.area() }
+
+    fun plus(newRectangle: Rectangle?): RectangleSet {
+        if (newRectangle == null)
+            return this
+        var leftOver = listOf(newRectangle)
+        for (rectangle in rectangleList) {
+            leftOver = leftOver.flatMap { leftOverRectangle -> leftOverRectangle.minus(rectangle) }
+        }
+        return RectangleSet(rectangleList + leftOver)
+    }
+
+    fun minus(rectangle: Rectangle?): RectangleSet {
+        return RectangleSet(rectangleList.map { it.minus(rectangle) }.flatten())
+    }
+}
+
+
