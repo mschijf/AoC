@@ -4,10 +4,10 @@ import adventofcode.PuzzleSolverAbstract
 import java.lang.Exception
 
 fun main() {
-    PuzzleSolver(test=false).showResult()
+    Day09(test=false).showResult()
 }
 
-class PuzzleSolver(test: Boolean) : PuzzleSolverAbstract(test) {
+class Day09(test: Boolean) : PuzzleSolverAbstract(test) {
 
     private val xmasData = inputLines.map {it.toLong()}
     private val preamble = if (test) 5 else 25

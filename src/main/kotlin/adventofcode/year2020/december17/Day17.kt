@@ -3,10 +3,10 @@ package adventofcode.year2020.december17
 import adventofcode.PuzzleSolverAbstract
 
 fun main() {
-    PuzzleSolver(test=false).showResult()
+    Day17(test=false).showResult()
 }
 
-class PuzzleSolver(test: Boolean) : PuzzleSolverAbstract(test) {
+class Day17(test: Boolean) : PuzzleSolverAbstract(test) {
 
     override fun resultPartOne(): String {
         var activeCubes = inputLines.map { it.toList()}

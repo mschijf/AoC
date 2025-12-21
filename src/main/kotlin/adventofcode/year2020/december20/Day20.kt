@@ -4,10 +4,10 @@ import adventofcode.PuzzleSolverAbstract
 import tool.mylambdas.splitByCondition
 
 fun main() {
-    PuzzleSolver(test=false).showResult()
+    Day20(test=false).showResult()
 }
 
-class PuzzleSolver(test: Boolean) : PuzzleSolverAbstract(test) {
+class Day20(test: Boolean) : PuzzleSolverAbstract(test) {
 
     private val tileList = inputLines.splitByCondition { it.isEmpty() }.map { Tile(it) }
     init {

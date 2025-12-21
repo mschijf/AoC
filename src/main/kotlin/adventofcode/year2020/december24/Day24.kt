@@ -4,10 +4,10 @@ import adventofcode.PuzzleSolverAbstract
 import java.lang.Exception
 
 fun main() {
-    PuzzleSolver(test=false).showResult()
+    Day24(test=false).showResult()
 }
 
-class PuzzleSolver(test: Boolean) : PuzzleSolverAbstract(test) {
+class Day24(test: Boolean) : PuzzleSolverAbstract(test) {
 
     override fun resultPartOne(): String {
         val blackSet = initialBlackSet()

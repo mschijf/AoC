@@ -3,10 +3,10 @@ package adventofcode.year2020.december08
 import adventofcode.PuzzleSolverAbstract
 
 fun main() {
-    PuzzleSolver(test=false).showResult()
+    Day08(test=false).showResult()
 }
 
-class PuzzleSolver(test: Boolean) : PuzzleSolverAbstract(test) {
+class Day08(test: Boolean) : PuzzleSolverAbstract(test) {
     private val program = Program(inputLines)
 
     override fun resultPartOne(): String {

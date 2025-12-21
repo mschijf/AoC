@@ -3,10 +3,10 @@ package adventofcode.year2020.december21
 import adventofcode.PuzzleSolverAbstract
 
 fun main() {
-    PuzzleSolver(test=false).showResult()
+    Day21(test=false).showResult()
 }
 
-class PuzzleSolver(test: Boolean) : PuzzleSolverAbstract(test) {
+class Day21(test: Boolean) : PuzzleSolverAbstract(test) {
 
     private val foodList = inputLines.map { Food(it) }
     private val totalAllergenSet = foodList.map { it.allergenSet }.flatten().toSet()

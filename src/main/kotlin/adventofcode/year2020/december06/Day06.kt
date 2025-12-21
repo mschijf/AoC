@@ -4,10 +4,10 @@ import adventofcode.PuzzleSolverAbstract
 import tool.mylambdas.splitByCondition
 
 fun main() {
-    PuzzleSolver(test=false).showResult()
+    Day06(test=false).showResult()
 }
 
-class PuzzleSolver(test: Boolean) : PuzzleSolverAbstract(test) {
+class Day06(test: Boolean) : PuzzleSolverAbstract(test) {
     private val groupList = inputLines.splitByCondition { it.isEmpty() }.map { Group(it)}
 
     override fun resultPartOne(): String {

@@ -5,10 +5,10 @@ import tool.mylambdas.hasOnlyDigits
 import tool.mylambdas.splitByCondition
 
 fun main() {
-    PuzzleSolver(test=false).showResult()
+    Day19(test=false).showResult()
 }
 
-class PuzzleSolver(test: Boolean) : PuzzleSolverAbstract(test) {
+class Day19(test: Boolean) : PuzzleSolverAbstract(test) {
 
     override fun resultPartOne(): String {
         val inputBlocks = inputLines.splitByCondition { it.isEmpty() }

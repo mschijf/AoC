@@ -4,10 +4,10 @@ import adventofcode.PuzzleSolverAbstract
 import kotlin.math.absoluteValue
 
 fun main() {
-    PuzzleSolver(test=false).showResult()
+    Day12(test=false).showResult()
 }
 
-class PuzzleSolver(test: Boolean) : PuzzleSolverAbstract(test) {
+class Day12(test: Boolean) : PuzzleSolverAbstract(test) {
     private val instructionList = inputLines.map { Action(it) }
 
     override fun resultPartOne(): String {

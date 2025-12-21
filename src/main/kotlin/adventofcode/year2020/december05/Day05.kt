@@ -3,10 +3,10 @@ package adventofcode.year2020.december05
 import adventofcode.PuzzleSolverAbstract
 
 fun main() {
-    PuzzleSolver(test=false).showResult()
+    Day05(test=false).showResult()
 }
 
-class PuzzleSolver(test: Boolean) : PuzzleSolverAbstract(test) {
+class Day05(test: Boolean) : PuzzleSolverAbstract(test) {
 
     private val boardingpassList = inputLines.map { toSeatId(it) }
 

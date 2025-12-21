@@ -3,10 +3,10 @@ package adventofcode.year2020.december07
 import adventofcode.PuzzleSolverAbstract
 
 fun main() {
-    PuzzleSolver(test=false).showResult()
+    Day07(test=false).showResult()
 }
 
-class PuzzleSolver(test: Boolean) : PuzzleSolverAbstract(test) {
+class Day07(test: Boolean) : PuzzleSolverAbstract(test) {
 
 
     override fun resultPartOne(): String {

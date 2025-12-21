@@ -4,11 +4,11 @@ import adventofcode.PuzzleSolverAbstract
 import tool.mylambdas.splitByCondition
 
 fun main() {
-    PuzzleSolver(test=false).showResult()
+    Day16(test=false).showResult()
 }
 
 //15940 too low
-class PuzzleSolver(test: Boolean) : PuzzleSolverAbstract(test) {
+class Day16(test: Boolean) : PuzzleSolverAbstract(test) {
 
     override fun resultPartOne(): String {
         val dataBlocks = inputLines.splitByCondition { it.isEmpty() }

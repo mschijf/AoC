@@ -3,10 +3,10 @@ package adventofcode.year2020.december03
 import adventofcode.PuzzleSolverAbstract
 
 fun main() {
-    PuzzleSolver(test=true).showResult()
+    Day03(test=true).showResult()
 }
 
-class PuzzleSolver(test: Boolean) : PuzzleSolverAbstract(test) {
+class Day03(test: Boolean) : PuzzleSolverAbstract(test) {
 
     private val forest = Grid(inputLines.map {it.toList()})
 
