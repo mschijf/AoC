@@ -1,19 +1,17 @@
-package adventofcode.year2019.december11
+package adventofcode.year2019.day13
 
-class IntCodeProgram(baseIntCodeProgram: List<Long>) {
+class IntCodeProgram(baseIntCodeProgram: List<Long>, private val handleIO: IntCodeProgramIO) {
     private val intCodeProgram = MutableMapLongCodeProgram(baseIntCodeProgram.mapIndexed { index, l ->  Pair(index.toLong(), l)}.toMap())
-    private val inputList = mutableListOf<Long>()
     private var lastOutput = -999999L
-
-    var isFinished = false
-        private set
 
     private var currentIndex = 0L
     private var relativeBase = 0L
 
-    fun runProgram(inputValue: Long? = null): Long {
-        if (inputValue != null)
-            inputList.add(inputValue)
+    fun setMemoryFieldValue(index: Long, value: Long) {
+        intCodeProgram[index] = value
+    }
+
+    fun runProgram(): Long {
         while (true) {
             val opCode = intCodeProgram[currentIndex] % 100
             when (opCode.toInt()) {
@@ -33,15 +31,14 @@ class IntCodeProgram(baseIntCodeProgram: List<Long>) {
                 }
                 3 -> { //get input
                     val index1 = getIndex(currentIndex, 1)
-                    intCodeProgram[index1] = inputList.removeFirst()
+                    intCodeProgram[index1] = handleIO.read()
                     currentIndex += 2
                 }
                 4 -> { // output
                     val index1 = getIndex(currentIndex, 1)
                     lastOutput = intCodeProgram[index1]
-//                    println("Output: $lastOutput")
                     currentIndex += 2
-                    return lastOutput
+                    handleIO.write(lastOutput)
                 }
                 5 -> { // jump if true
                     val index1 = getIndex(currentIndex, 1)
@@ -79,7 +76,6 @@ class IntCodeProgram(baseIntCodeProgram: List<Long>) {
                     currentIndex += 2
                 }
                 99 -> { // halt
-                    isFinished = true
                     return lastOutput
                 }
                 else -> throw Exception("Hee...")
@@ -106,4 +102,9 @@ class MutableMapLongCodeProgram(baseMap: Map<Long, Long>) {
     operator fun set(index: Long, value: Long) {
         myMap[index] = value
     }
+}
+
+interface IntCodeProgramIO {
+    fun write(output: Long)
+    fun read(): Long
 }

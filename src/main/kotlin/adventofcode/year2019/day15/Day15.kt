@@ -1,4 +1,4 @@
-package adventofcode.year2019.december15
+package adventofcode.year2019.day15
 
 import adventofcode.year2019.IntCodeProgramCR
 import adventofcode.PuzzleSolverAbstract

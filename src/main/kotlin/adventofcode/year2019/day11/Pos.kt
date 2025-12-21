@@ -1,4 +1,4 @@
-package adventofcode.year2019.december11
+package adventofcode.year2019.day11
 
 data class Pos(val x: Int, val y: Int) {
     fun moveOneStep(dir: Direction): Pos {

@@ -1,8 +1,8 @@
-package adventofcode.year2019.december13Coroutines
+package adventofcode.year2019.day13Coroutines
 
 import adventofcode.PuzzleSolverAbstract
 import adventofcode.year2019.IntCodeProgramCR
-import adventofcode.year2019.december15.Pos
+import adventofcode.year2019.day15.Pos
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.runBlocking

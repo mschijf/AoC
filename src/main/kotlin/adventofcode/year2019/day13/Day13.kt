@@ -1,4 +1,4 @@
-package adventofcode.year2019.december13
+package adventofcode.year2019.day13
 
 import adventofcode.PuzzleSolverAbstract
 import kotlin.math.sign

@@ -1,6 +1,5 @@
-package adventofcode.year2019.december17ToddGinsberg
+package adventofcode.year2019
 
-import adventofcode.year2019.IntCodeProgramCR
 import adventofcode.PuzzleSolverAbstract
 import kotlinx.coroutines.flow.consumeAsFlow
 import kotlinx.coroutines.flow.map
@@ -11,10 +10,10 @@ import tool.coordinate.twodimensional.Point
 import tool.coordinate.twodimensional.pos
 
 fun main() {
-    Day17(test=false).showResult()
+    Day17ToddGinsberg(test=false).showResult()
 }
 
-class Day17(test: Boolean) : PuzzleSolverAbstract(test) {
+class Day17ToddGinsberg(test: Boolean) : PuzzleSolverAbstract(test) {
 
     override fun resultPartOne(): String {
         val scaffold = mapScaffold()
@@ -41,7 +40,7 @@ class Day17(test: Boolean) : PuzzleSolverAbstract(test) {
             .toMap()
 
     private fun mapScaffold(): Map<Point, Char> = runBlocking {
-        val computer = IntCodeProgramCR(inputLines.first().split(",").map { it.toLong() })
+        val computer = IntCodeProgramCR(inputLines().first().split(",").map { it.toLong() })
         launch {
             computer.runProgram()
         }
