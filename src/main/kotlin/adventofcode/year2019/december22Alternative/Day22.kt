@@ -3,10 +3,10 @@ package adventofcode.year2019.december22Alternative
 import adventofcode.PuzzleSolverAbstract
 
 fun main() {
-    PuzzleSolver(test=false).showResult()
+    Day22(test=false).showResult()
 }
 
-class PuzzleSolver(test: Boolean) : PuzzleSolverAbstract(test) {
+class Day22(test: Boolean) : PuzzleSolverAbstract(test) {
     private val cardDeckSize = if (test) 10 else 10007L
 
     override fun resultPartOne(): Any {

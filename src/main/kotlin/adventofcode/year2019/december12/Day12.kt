@@ -6,10 +6,10 @@ import kotlin.math.absoluteValue
 
 
 fun main() {
-    PuzzleSolver(test=false).showResult()
+    Day12(test=false).showResult()
 }
 
-class PuzzleSolver(test: Boolean) : PuzzleSolverAbstract(test) {
+class Day12(test: Boolean) : PuzzleSolverAbstract(test) {
 
     override fun resultPartOne(): String {
         val moonList = inputLines.map{ Moon(it) }

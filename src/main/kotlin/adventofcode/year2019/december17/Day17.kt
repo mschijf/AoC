@@ -11,10 +11,10 @@ import tool.coordinate.twodimensional.pos
 import kotlin.math.min
 
 fun main() {
-    PuzzleSolver(test=false).showResult()
+    Day17(test=false).showResult()
 }
 
-class PuzzleSolver(test: Boolean) : PuzzleSolverAbstract(test) {
+class Day17(test: Boolean) : PuzzleSolverAbstract(test) {
 
     private val scaffoldMap = ScaffoldMap(inputLines.first())
 

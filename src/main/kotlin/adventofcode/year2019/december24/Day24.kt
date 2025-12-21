@@ -6,10 +6,10 @@ import tool.coordinate.twodimensional.pos
 import kotlin.math.max
 
 fun main() {
-    PuzzleSolver(test=false).showResult()
+    Day24(test=false).showResult()
 }
 
-class PuzzleSolver(test: Boolean) : PuzzleSolverAbstract(test) {
+class Day24(test: Boolean) : PuzzleSolverAbstract(test) {
     private val grid =
         inputLines.mapIndexed {rowIndex, row ->
             row.mapIndexed { colIndex, ch -> pos(colIndex, rowIndex) to ch }

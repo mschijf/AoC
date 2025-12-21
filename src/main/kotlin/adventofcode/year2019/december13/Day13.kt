@@ -4,10 +4,10 @@ import adventofcode.PuzzleSolverAbstract
 import kotlin.math.sign
 
 fun main() {
-    PuzzleSolver(test=false).showResult()
+    Day13(test=false).showResult()
 }
 
-class PuzzleSolver(test: Boolean) : PuzzleSolverAbstract(test) {
+class Day13(test: Boolean) : PuzzleSolverAbstract(test) {
 
     override fun resultPartOne(): String {
         val arcadeGame = ArcadeGame( inputLines.first() )

@@ -4,10 +4,10 @@ import adventofcode.PuzzleSolverAbstract
 import kotlin.math.sign
 
 fun main() {
-    PuzzleSolver(test=false).showResult()
+    Day14(test=false).showResult()
 }
 
-class PuzzleSolver(test: Boolean) : PuzzleSolverAbstract(test) {
+class Day14(test: Boolean) : PuzzleSolverAbstract(test) {
 
     override fun resultPartOne(): String {
         val reactionList = inputLines.map { it.toReaction() } + listOf(Reaction("1 ORE"))

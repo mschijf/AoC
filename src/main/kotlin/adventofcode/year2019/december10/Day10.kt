@@ -7,10 +7,10 @@ import tool.math.Fraction
 import kotlin.math.absoluteValue
 
 fun main() {
-    PuzzleSolver(test=false).showResult()
+    Day10(test=false).showResult()
 }
 
-class PuzzleSolver(test: Boolean) : PuzzleSolverAbstract(test) {
+class Day10(test: Boolean) : PuzzleSolverAbstract(test) {
     private val asteroidPosList = inputLines
         .mapIndexed{y, row ->
             row.toList().mapIndexedNotNull { x, ch -> if (ch == '#') xyCoordinate(x,y) else null } }

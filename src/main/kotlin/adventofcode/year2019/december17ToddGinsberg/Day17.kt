@@ -11,10 +11,10 @@ import tool.coordinate.twodimensional.Point
 import tool.coordinate.twodimensional.pos
 
 fun main() {
-    PuzzleSolver(test=false).showResult()
+    Day17(test=false).showResult()
 }
 
-class PuzzleSolver(test: Boolean) : PuzzleSolverAbstract(test) {
+class Day17(test: Boolean) : PuzzleSolverAbstract(test) {
 
     override fun resultPartOne(): String {
         val scaffold = mapScaffold()

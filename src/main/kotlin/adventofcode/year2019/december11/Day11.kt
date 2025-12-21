@@ -3,10 +3,10 @@ package adventofcode.year2019.december11
 import adventofcode.PuzzleSolverAbstract
 
 fun main() {
-    PuzzleSolver(test=false).showResult()
+    Day11(test=false).showResult()
 }
 
-class PuzzleSolver(test: Boolean) : PuzzleSolverAbstract(test) {
+class Day11(test: Boolean) : PuzzleSolverAbstract(test) {
 
     private val baseIntCodeProgram = inputLines.first().split(",").map{it.toLong()}
 

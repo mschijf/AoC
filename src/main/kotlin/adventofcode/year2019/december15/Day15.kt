@@ -8,10 +8,10 @@ import java.util.*
 import kotlin.math.min
 
 fun main() {
-    PuzzleSolver(test=false).showResult()
+    Day15(test=false).showResult()
 }
 
-class PuzzleSolver(test: Boolean) : PuzzleSolverAbstract(test) {
+class Day15(test: Boolean) : PuzzleSolverAbstract(test) {
 
     private val maze = initMaze()
     private val oxygenSystemLocation = maze.entries.first { it.value == 2 }.key

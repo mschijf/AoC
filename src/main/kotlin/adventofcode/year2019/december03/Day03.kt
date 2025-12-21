@@ -4,10 +4,10 @@ import adventofcode.PuzzleSolverAbstract
 import kotlin.math.absoluteValue
 
 fun main() {
-    PuzzleSolver(test=false).showResult()
+    Day03(test=false).showResult()
 }
 
-class PuzzleSolver(test: Boolean) : PuzzleSolverAbstract(test) {
+class Day03(test: Boolean) : PuzzleSolverAbstract(test) {
 
     override fun resultPartOne(): String {
         val wireList = inputLines.map { Wire(it) }

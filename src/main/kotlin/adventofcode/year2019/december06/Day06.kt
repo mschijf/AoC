@@ -4,10 +4,10 @@ import adventofcode.PuzzleSolverAbstract
 import java.util.*
 
 fun main() {
-    PuzzleSolver(test=false).showResult()
+    Day06(test=false).showResult()
 }
 
-class PuzzleSolver(test: Boolean) : PuzzleSolverAbstract(test) {
+class Day06(test: Boolean) : PuzzleSolverAbstract(test) {
 
     private val nameNodeMap = inputLines.map { it.split(")") }.flatten().distinct().associateWith { Node(it) }
 

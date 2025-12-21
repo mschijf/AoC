@@ -5,10 +5,10 @@ import tool.mylambdas.collectioncombination.makeAllPermutations
 import java.lang.Exception
 
 fun main() {
-    PuzzleSolver(test=false).showResult()
+    Day07(test=false).showResult()
 }
 
-class PuzzleSolver(test: Boolean) : PuzzleSolverAbstract(test) {
+class Day07(test: Boolean) : PuzzleSolverAbstract(test) {
 
     private val baseIntCodeProgram = inputLines.first().split(",").map{it.toInt()}
 

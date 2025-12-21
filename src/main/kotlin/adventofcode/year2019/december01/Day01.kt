@@ -3,10 +3,10 @@ package adventofcode.year2019.december01
 import adventofcode.PuzzleSolverAbstract
 
 fun main() {
-    PuzzleSolver(test=false).showResult()
+    Day01(test=false).showResult()
 }
 
-class PuzzleSolver(test: Boolean) : PuzzleSolverAbstract(test) {
+class Day01(test: Boolean) : PuzzleSolverAbstract(test) {
 
     override fun resultPartOne(): String {
         return inputLines.sumOf { it.toInt() / 3 - 2 }.toString()

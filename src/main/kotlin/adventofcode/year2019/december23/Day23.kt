@@ -7,13 +7,13 @@ import kotlinx.coroutines.channels.Channel
 import kotlinx.coroutines.channels.Channel.Factory.UNLIMITED
 
 fun main() {
-    PuzzleSolver(test=false).showResult()
+    Day23(test=false).showResult()
 }
 
 //
 // note this program prints the answer, but does not end.
 //
-class PuzzleSolver(test: Boolean) : PuzzleSolverAbstract(test) {
+class Day23(test: Boolean) : PuzzleSolverAbstract(test) {
 
     override fun resultPartOne(): Any {
         val network= Network(inputLines.first())

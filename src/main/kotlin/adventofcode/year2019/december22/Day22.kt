@@ -5,10 +5,10 @@ import java.math.BigInteger
 import kotlin.math.absoluteValue
 
 fun main() {
-    PuzzleSolver(test=false).showResult()
+    Day22(test=false).showResult()
 }
 
-class PuzzleSolver(test: Boolean) : PuzzleSolverAbstract(test) {
+class Day22(test: Boolean) : PuzzleSolverAbstract(test) {
     private val shuffleActionList = inputLines.map {actionLine -> ShuffleAction.from(actionLine) }
 
     override fun resultPartOne(): String {

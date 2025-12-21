@@ -3,10 +3,10 @@ package adventofcode.year2019.december08
 import adventofcode.PuzzleSolverAbstract
 
 fun main() {
-    PuzzleSolver(test=false).showResult()
+    Day08(test=false).showResult()
 }
 
-class PuzzleSolver(test: Boolean) : PuzzleSolverAbstract(test) {
+class Day08(test: Boolean) : PuzzleSolverAbstract(test) {
 
     private val wide = if (test) 2 else 25
     private val tall = if (test) 2 else 6

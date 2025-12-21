@@ -4,10 +4,9 @@ import adventofcode.year2019.Input
 import adventofcode.year2019.IntCodeProgramCR
 import adventofcode.PuzzleSolverAbstract
 import kotlinx.coroutines.*
-import java.util.*
 
 fun main() {
-    PuzzleSolver(test=false).showResult()
+    Day25(test=false).showResult()
 }
 
 //   figure it out ;-)
@@ -26,7 +25,7 @@ fun main() {
 //
 //   After that, I added that to the set of commands, to have it 'saved'
 
-class PuzzleSolver(test: Boolean) : PuzzleSolverAbstract(test) {
+class Day25(test: Boolean) : PuzzleSolverAbstract(test) {
 
     private val computer = IntCodeProgramCR(inputLines.first())
 

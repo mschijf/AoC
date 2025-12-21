@@ -5,10 +5,10 @@ import tool.coordinate.twodimensional.Point
 import tool.coordinate.twodimensional.pos
 
 fun main() {
-    PuzzleSolver(test=false).showResult()
+    Day20(test=false).showResult()
 }
 
-class PuzzleSolver(test: Boolean) : PuzzleSolverAbstract(test) {
+class Day20(test: Boolean) : PuzzleSolverAbstract(test) {
 
     private val maze = Maze.from(inputLines)
 

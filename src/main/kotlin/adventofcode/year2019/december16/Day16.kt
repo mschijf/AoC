@@ -4,10 +4,10 @@ import adventofcode.PuzzleSolverAbstract
 import kotlin.math.absoluteValue
 
 fun main() {
-    PuzzleSolver(test=false).showResult()
+    Day16(test=false).showResult()
 }
 
-class PuzzleSolver(test: Boolean) : PuzzleSolverAbstract(test) {
+class Day16(test: Boolean) : PuzzleSolverAbstract(test) {
 
     private val basePattern = listOf(0, 1, 0, -1)
 
