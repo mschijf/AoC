@@ -1,4 +1,4 @@
-package adventofcode.year2018.december21
+package adventofcode.year2018.day21
 
 class RegisterDevice(
     private val ipRegister: Int,

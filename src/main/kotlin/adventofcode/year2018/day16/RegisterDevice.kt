@@ -1,4 +1,4 @@
-package adventofcode.year2018.december16
+package adventofcode.year2018.day16
 
 class RegisterDevice(
     private val register: MutableList<Int> = mutableListOf(0,0,0,0),
