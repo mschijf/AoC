@@ -1,4 +1,4 @@
-package adventofcode.year2020.day20
+package adventofcode.year2020.toolday20
 
 class Arrangement(inputArrangement:List<List<TileConfig?>> ) {
     private val arrangement = inputArrangement.map { rows -> rows.map { it!! } }

@@ -1,6 +1,8 @@
-package adventofcode.year2020.day20
+package adventofcode.year2020
 
 import adventofcode.PuzzleSolverAbstract
+import adventofcode.year2020.toolday20.SquareArrangement
+import adventofcode.year2020.toolday20.Tile
 import tool.mylambdas.splitByCondition
 
 fun main() {

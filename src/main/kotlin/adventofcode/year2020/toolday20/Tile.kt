@@ -1,4 +1,4 @@
-package adventofcode.year2020.day20
+package adventofcode.year2020.toolday20
 
 class Tile(inputLines: List<String>) {
     val id = inputLines.first().substringAfter("Tile ").substringBefore(":").toLong()

@@ -1,4 +1,4 @@
-package adventofcode.year2020.day20
+package adventofcode.year2020.toolday20
 
 import java.lang.Exception
 import kotlin.math.sqrt
