@@ -1,9 +1,6 @@
 package adventofcode.year2021
 
 import adventofcode.PuzzleSolverAbstract
-import tool.coordinate.twodimensional.Direction
-import tool.coordinate.twodimensional.Point
-import tool.coordinate.twodimensional.pos
 
 fun main() {
     Day02(test=false).showResult()
