@@ -10,10 +10,6 @@ fun main() {
 class Day09(test: Boolean) : PuzzleSolverAbstract(test, puzzleName="TBD", hasInputFile = true) {
 
     private val caveMap = inputLines.asGrid().mapValues { (key, ch) -> ch.digitToInt() }
-    val minX = caveMap.keys.minOf { it.x }
-    val maxX = caveMap.keys.maxOf { it.x }
-    val minY = caveMap.keys.minOf { it.y }
-    val maxY = caveMap.keys.maxOf { it.y }
 
     override fun resultPartOne(): Any {
         return caveMap.keys.filter { it.isLowest() }.sumOf { lowPoint -> lowPoint.riskValue()}
@@ -31,7 +27,7 @@ class Day09(test: Boolean) : PuzzleSolverAbstract(test, puzzleName="TBD", hasInp
         this.neighbors().filter { nb -> nb.inCave() }.all{ nb -> caveMap[nb]!! > caveMap[this]!!}
 
     private fun Point.inCave(): Boolean =
-        this.x in minX..maxX && this.y in minY .. maxY
+        this in caveMap.keys
 
     private fun Point.riskValue() =
         caveMap[this]!! + 1
