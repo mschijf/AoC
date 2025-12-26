@@ -23,10 +23,11 @@ class Day14(test: Boolean) : PuzzleSolverAbstract(test, puzzleName = "TBD", hasI
     }
 
     private fun solve(nSteps: Int): Long {
-        val result = (1..nSteps)
+        return (1..nSteps)
             .fold(patternCount) { acc, _ -> acc.processStep() }
             .charFrequency()
-        return result.maxBy { it.value }.value - result.minBy { it.value }.value
+            .values
+            .let { it -> it.max() - it.min() }
     }
 
     private fun String.toPatternCount(): Map<String, Long> {
