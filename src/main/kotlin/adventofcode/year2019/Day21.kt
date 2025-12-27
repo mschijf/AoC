@@ -62,7 +62,7 @@ class Springdroid(inputLine: String, private val programNumber: Int) {
     }
 
     private suspend fun runProgram(goCommand: String) {
-        val program = Input("data/december21/", "droid_program$programNumber").inputLines
+        val program = Input("data/2019/december21/", "droid_program$programNumber").inputLines
         program.dropLast(1).filter{it.isNotEmpty() && !it.startsWith("#")}.forEach { line -> sendInput(line) }
         sendInput(goCommand)
     }

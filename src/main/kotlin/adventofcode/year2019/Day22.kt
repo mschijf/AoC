@@ -33,9 +33,9 @@ class Day22(test: Boolean) : PuzzleSolverAbstract(test) {
         return index.toString()
     }
 
-//    override fun resultPartTwo(): String {
-//        return modularArithmeticVersion(2020.toBigInteger()).toString()
-//    }
+    override fun resultPartTwo(): String {
+        return modularArithmeticVersion(2020.toBigInteger()).toString()
+    }
 
     companion object {
         val NUMBER_OF_CARDS = 119315717514047.toBigInteger()
