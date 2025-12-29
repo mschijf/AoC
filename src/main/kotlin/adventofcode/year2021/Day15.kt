@@ -3,6 +3,7 @@ package adventofcode.year2021
 import adventofcode.PuzzleSolverAbstract
 import tool.coordinate.twodimensional.Point
 import tool.coordinate.twodimensional.pos
+import java.util.PriorityQueue
 
 fun main() {
     Day15(test=false).showResult()
@@ -18,7 +19,8 @@ class Day15(test: Boolean) : PuzzleSolverAbstract(test, puzzleName="TBD", hasInp
     }
 
     override fun resultPartTwo(): Any {
-        return riskLevelMap.explodeFiveTimes().shortestPath()
+//        return riskLevelMap.explodeFiveTimes().shortestPath()
+        return riskLevelMap.explodeFiveTimes().shortestPathPriorityQueue()
     }
 
     private fun Map<Point, Int>.shortestPath():Int {
@@ -45,6 +47,30 @@ class Day15(test: Boolean) : PuzzleSolverAbstract(test, puzzleName="TBD", hasInp
         return -1
     }
 
+    private fun Map<Point, Int>.shortestPathPriorityQueue():Int {
+        val visited = mutableSetOf<Point>()
+        val positionsToExamine = PriorityQueue<Pair<Point, Int>>{ p1, p2 -> p1.second - p2.second }
+        val from = this.keys.minBy { p -> p.x + 1000 * p.y}
+        val to = this.keys.maxBy { p -> p.x + 1000 * p.y}
+
+        positionsToExamine.add(Pair(from, 0))
+        while (positionsToExamine.isNotEmpty()) {
+            val (current, distanceFromStart) = positionsToExamine.remove()
+            if (current == to)
+                return distanceFromStart
+
+            if (current !in visited) {
+                visited += current
+                current.neighbors().filter { nb -> nb in this }.forEach { nextPosition ->
+                    val distanceToNextPosition = distanceFromStart + this[nextPosition]!!
+                    positionsToExamine.add(Pair(nextPosition, distanceToNextPosition))
+                }
+            }
+        }
+        return -1
+    }
+
+
     private fun Map<Point, Int>.explodeFiveTimes(): Map<Point, Int> {
         val maxPosition = this.keys.maxBy { p -> p.x + 1000*p.y}
         val result = mutableMapOf<Point, Int>()
@@ -60,16 +86,3 @@ class Day15(test: Boolean) : PuzzleSolverAbstract(test, puzzleName="TBD", hasInp
         return result
     }
 }
-
-
-/**
- *
- * 1 - 1
- * 2 - 2
- * 9 - 9
- * 10 - 1
- * 12 - 3
- * 18 - 9
- */
-
-
