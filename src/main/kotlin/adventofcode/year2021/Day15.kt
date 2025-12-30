@@ -15,36 +15,11 @@ class Day15(test: Boolean) : PuzzleSolverAbstract(test, puzzleName="TBD", hasInp
     private val riskLevelMap = inputLines.asGrid().mapValues { it.value.digitToInt() }
 
     override fun resultPartOne(): Any {
-        return riskLevelMap.shortestPath()
+        return riskLevelMap.shortestPathPriorityQueue()
     }
 
     override fun resultPartTwo(): Any {
-//        return riskLevelMap.explodeFiveTimes().shortestPath()
         return riskLevelMap.explodeFiveTimes().shortestPathPriorityQueue()
-    }
-
-    private fun Map<Point, Int>.shortestPath():Int {
-        val visited = mutableSetOf<Point>()
-        val positionsToExamine = mutableMapOf<Point, Int>()
-        val from = this.keys.minBy { p -> p.x + 1000*p.y}
-        val to = this.keys.maxBy { p -> p.x + 1000*p.y}
-
-        positionsToExamine[from] = 0
-        while (positionsToExamine.isNotEmpty()) {
-            val (current, distanceFromStart) = positionsToExamine.minBy { it.value }
-            positionsToExamine.remove(current)
-            if (current == to)
-                return distanceFromStart
-
-            visited += current
-            current.neighbors().filter { nb -> nb in this && nb !in visited}.forEach { nextPosition ->
-                val distanceToNextPosition = distanceFromStart + this[nextPosition]!!
-                if (nextPosition !in positionsToExamine || distanceToNextPosition < positionsToExamine[nextPosition]!!) {
-                    positionsToExamine[nextPosition] = distanceToNextPosition
-                }
-            }
-        }
-        return -1
     }
 
     private fun Map<Point, Int>.shortestPathPriorityQueue():Int {
@@ -64,6 +39,9 @@ class Day15(test: Boolean) : PuzzleSolverAbstract(test, puzzleName="TBD", hasInp
                 current.neighbors().filter { nb -> nb in this }.forEach { nextPosition ->
                     val distanceToNextPosition = distanceFromStart + this[nextPosition]!!
                     positionsToExamine.add(Pair(nextPosition, distanceToNextPosition))
+                    //^^^ we might add more times a node in the priority queue, but we will always pick the one with the
+                    //    lowest risk level first.
+                    //    And by checking if we already have visited a node, we can safely do this trick.
                 }
             }
         }
@@ -85,4 +63,35 @@ class Day15(test: Boolean) : PuzzleSolverAbstract(test, puzzleName="TBD", hasInp
         }
         return result
     }
+
+    /**
+     * below a different algorithm with an own kind of priority queue implementation.
+     * we keep a map of points, and we ensure that each point only appears once.
+     * if we want to add a new one, we only add the one with the lowest risk level. (or actually, we update the risk level for that node)
+     */
+//    private fun Map<Point, Int>.shortestPath():Int {
+//        val visited = mutableSetOf<Point>()
+//        val positionsToExamine = mutableMapOf<Point, Int>()
+//        val from = this.keys.minBy { p -> p.x + 1000*p.y}
+//        val to = this.keys.maxBy { p -> p.x + 1000*p.y}
+//
+//        positionsToExamine[from] = 0
+//        while (positionsToExamine.isNotEmpty()) {
+//            val (current, distanceFromStart) = positionsToExamine.minBy { it.value }
+//            positionsToExamine.remove(current)
+//            if (current == to)
+//                return distanceFromStart
+//
+//            visited += current
+//            current.neighbors().filter { nb -> nb in this && nb !in visited}.forEach { nextPosition ->
+//                val distanceToNextPosition = distanceFromStart + this[nextPosition]!!
+//                if (nextPosition !in positionsToExamine || distanceToNextPosition < positionsToExamine[nextPosition]!!) {
+//                    positionsToExamine[nextPosition] = distanceToNextPosition
+//                }
+//            }
+//        }
+//        return -1
+//    }
+//
 }
+
